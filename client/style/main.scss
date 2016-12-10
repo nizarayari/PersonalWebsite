@@ -1,0 +1,14 @@
+@import 'bourbon';
+
+body {
+  margin:0;
+  padding:0;
+}
+
+
+
+//base
+@import 'base/colors';
+
+//components
+@import 'components/header';

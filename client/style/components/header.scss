@@ -1,0 +1,44 @@
+@import 'bourbon';
+
+
+.header {
+  height: 450px;
+  background: #ccc;
+
+  .logo {
+    @include size(50px);
+    @include linear-gradient(to top, red, orange);
+  }
+  
+  nav {
+    a {
+      font: {
+        family: 'Source Sans Pro';
+        weight: 600;
+        size: 16px;
+      }
+      display: inline-block;
+      margin-left: 20px;
+      color: rgba(0,0,0,0.7);  
+      text-transform: uppercase;
+      text-decoration: none;
+      
+      &:hover {
+        color:rgba(0,0,0,1);
+      }
+    
+    }
+  }
+
+  h1 {
+    font:{
+      size:72px;
+      weight:700;
+    }
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.05em
+  }
+
+
+}
