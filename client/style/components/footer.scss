@@ -1,0 +1,51 @@
+.footer {
+   background: url("../assets/header.png") center center;
+  background-size: cover;
+  @include clearfix
+
+  .lockup{
+    padding: 50px 30px;
+    
+    .logo{
+      @include size(50px);
+      border-radius: 100%;
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      opacity: 0.5;
+    }
+  
+    .content-wraper {
+      float: left;
+      padding-top: 5px;
+
+      .copyright {
+        margin: 0;
+        @extend %small-bold;
+        color: #ccc;
+      }
+
+      a {
+        @extend %small-bold;
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;  
+        
+        &:hover{
+          opacity: 0.8;
+        }
+      }
+
+
+    }
+
+
+
+  }
+  
+
+
+
+
+
+}

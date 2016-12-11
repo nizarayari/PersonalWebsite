@@ -9,7 +9,7 @@ export default class Header extends Component {
     return (
       <div className='header'>
 
-        <div className='logo'> </div>
+        <img className='logo' src='../assets/logo2.png' />
 
         <nav>
           <a href=''> About Me </a>
@@ -18,7 +18,7 @@ export default class Header extends Component {
           <a href=''> Contact </a>
         </nav>
 
-        <h1> JavaScript Enthousiast </h1>
+        <h1> <span> JavaScript Enthousiast </span> </h1>
         <p className='subtitle'> Hello there! </p>
 
       </div>

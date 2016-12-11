@@ -1,5 +1,6 @@
 var bourbon = require('node-bourbon').includePaths;
-
+var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
 	  entry: ["react-hot-loader/patch",   
@@ -7,7 +8,7 @@ module.exports = {
 	  ],
 	  output: {
 	    filename: 'bundle.js',
-	    path: __dirname + '/client',
+	    path: __dirname + '/compiled',
 	    publicPath: '/compiled/'
 	  },
 	  module: {
@@ -23,10 +24,12 @@ module.exports = {
 	      {
 	      	test: /\.scss$/,
 	      	loaders:["style", "css", "sass?includePaths[]=" + bourbon]
-	      }
+	      },
+	      { test: /\.(png|jpg)$/, loader: 'file-loader' }
+
 	    ]
 	  },
 	  resolve: {
-	  	extentions: ['', '.js', '.jsx']
+	  	extentions: ['', '.js', '.jsx', '.png']
 	  },
 };
