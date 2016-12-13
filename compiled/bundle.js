@@ -113,7 +113,7 @@
 	
 	var _main4 = _interopRequireDefault(_main3);
 	
-	var _reactHotLoader = __webpack_require__(/*! react-hot-loader */ 183);
+	var _reactHotLoader = __webpack_require__(/*! react-hot-loader */ 184);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22084,7 +22084,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\n  margin: 0;\n  padding: 0; }\n\n.header {\n  height: 450px;\n  background-image: url(" + __webpack_require__(/*! ../assets/header.png */ 179) + ");\n  background-size: cover; }\n  .header .logo {\n    float: left;\n    margin: 10px 0 0 30px;\n    border: white solid 1px;\n    border-radius: 100%;\n    opacity: 0.8;\n    height: 100px;\n    width: 100px; }\n  .header nav {\n    float: right;\n    margin: 30px 30px 0px 0px; }\n    .header nav a {\n      font-family: 'Source Sans Pro';\n      font-weight: 600;\n      font-size: 16px;\n      display: inline-block;\n      margin-left: 20px;\n      color: rgba(0, 0, 0, 0.7);\n      text-transform: uppercase;\n      text-decoration: none; }\n      .header nav a:hover {\n        color: black; }\n  .header h1 {\n    font-size: 72px;\n    font-weight: 700;\n    text-transform: uppercase;\n    color: white;\n    letter-spacing: 0.05em;\n    text-align: center;\n    clear: both;\n    padding-top: 100px; }\n    .header h1 span {\n      border: white solid 10px;\n      display: inline-block;\n      padding: 0.2em 0.5em; }\n  .header .subtitle {\n    text-align: center;\n    font-weight: 700;\n    text-transform: uppercase;\n    color: white;\n    letter-spacing: 0.3em;\n    line-height: 1; }\n", ""]);
+	exports.push([module.id, "body {\n  margin: 0;\n  padding: 0; }\n\n.header nav a, .header .subtitle, .footer .lockup .content-wraper .copyright, .footer .lockup .content-wraper a {\n  font-family: 'Source Sans Pro';\n  font-weight: 600;\n  font-size: 16px;\n  text-transform: uppercase; }\n\n.header {\n  height: 450px;\n  background: url(" + __webpack_require__(/*! ../assets/header.png */ 179) + ") center center;\n  background-size: cover; }\n  .header .logo {\n    float: left;\n    margin: 10px 0 0 30px;\n    border: white solid 1px;\n    border-radius: 100%;\n    opacity: 0.8;\n    height: 100px;\n    width: 100px; }\n  .header nav {\n    float: right;\n    margin: 30px 30px 0px 0px; }\n    .header nav a {\n      display: inline-block;\n      margin-left: 20px;\n      color: white;\n      text-decoration: none; }\n      .header nav a:before {\n        content: '';\n        display: block;\n        margin: auto;\n        height: 1px;\n        width: 0px;\n        background: transparent;\n        transition: width .5s ease, background-color .5s ease; }\n      .header nav a:hover:before {\n        width: 100%;\n        background: white; }\n  .header h1 {\n    font-size: 72px;\n    font-weight: 700;\n    text-transform: uppercase;\n    color: white;\n    letter-spacing: 0.05em;\n    text-align: center;\n    clear: both;\n    padding-top: 100px; }\n    .header h1 span {\n      border: white solid 10px;\n      display: inline-block;\n      padding: 0.2em 0.5em; }\n  .header .subtitle {\n    text-align: center;\n    color: white;\n    letter-spacing: 0.3em;\n    line-height: 1; }\n\n.footer {\n  background: url(" + __webpack_require__(/*! ../assets/header.png */ 179) + ") center center;\n  background-size: cover; }\n  .footer::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n  .footer .lockup {\n    padding: 50px 30px; }\n    .footer .lockup .logo {\n      height: 50px;\n      width: 50px;\n      border-radius: 100%;\n      float: left;\n      margin-right: 30px;\n      margin-bottom: 20px;\n      opacity: 0.5; }\n    .footer .lockup .content-wraper {\n      float: left;\n      padding-top: 5px; }\n      .footer .lockup .content-wraper .copyright {\n        margin: 0;\n        color: #ccc; }\n      .footer .lockup .content-wraper a {\n        text-decoration: none;\n        color: white;\n        margin-right: 20px; }\n        .footer .lockup .content-wraper a:hover {\n          opacity: 0.8; }\n\n.cont {\n  height: 600px;\n  width: 600px;\n  border: black solid 1px;\n  text-align: center; }\n  .cont .dropdown {\n    display: inline-block; }\n    .cont .dropdown > ul {\n      list-style: none;\n      display: inline-block; }\n      .cont .dropdown > ul > li {\n        float: left;\n        position: relative;\n        width: 50px; }\n\n.sublist {\n  position: absolute;\n  top: 100%;\n  left: 0%;\n  width: 100%;\n  padding: 0; }\n\nul.sublist li {\n  display: none; }\n\nli:hover > .sublist li {\n  display: block;\n  background: black;\n  margin: 5px; }\n\nli:hover > .sublist {\n  perspective: 1000px; }\n  li:hover > .sublist li {\n    opacity: 0; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: -150ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: 0ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: 150ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: 300ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n\n@keyframes menu {\n  0% {\n    opacity: 0;\n    transform: rotateY(-90deg) translateY(30px); }\n  100% {\n    opacity: 1;\n    transform: rotateY(0deg) translateY(0px); } }\n", ""]);
 	
 	// exports
 
@@ -22446,6 +22446,10 @@
 	
 	var _header2 = _interopRequireDefault(_header);
 	
+	var _footer = __webpack_require__(/*! ./footer */ 183);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22469,7 +22473,8 @@
 	      return _react2.default.createElement(
 	        "div",
 	        null,
-	        _react2.default.createElement(_header2.default, null)
+	        _react2.default.createElement(_header2.default, null),
+	        _react2.default.createElement(_footer2.default, null)
 	      );
 	    }
 	  }]);
@@ -22603,15 +22608,119 @@
 /***/ },
 /* 183 */
 /*!*************************************!*\
+  !*** ./client/components/footer.js ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 5);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Footer = function (_Component) {
+	  _inherits(Footer, _Component);
+	
+	  function Footer() {
+	    _classCallCheck(this, Footer);
+	
+	    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+	  }
+	
+	  _createClass(Footer, [{
+	    key: 'render',
+	    value: function render() {
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'footer' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'lockup' },
+	          _react2.default.createElement('img', { className: 'logo', src: '../assets/logo2.png' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'content-wraper' },
+	            _react2.default.createElement(
+	              'nav',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: '' },
+	                ' About Me '
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: '' },
+	                ' Work '
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: '' },
+	                ' Articles '
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: '' },
+	                ' Contact '
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'copyright' },
+	              ' All content copyright 2016 '
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Footer;
+	}(_react.Component);
+	
+	var _default = Footer;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(Footer, 'Footer', '/Users/nizarayari/Desktop/PersonalWebsite/client/components/footer.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/nizarayari/Desktop/PersonalWebsite/client/components/footer.js');
+	}();
+
+	;
+
+/***/ },
+/* 184 */
+/*!*************************************!*\
   !*** ./~/react-hot-loader/index.js ***!
   \*************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(/*! ./lib/index */ 184);
+	module.exports = __webpack_require__(/*! ./lib/index */ 185);
 
 
 /***/ },
-/* 184 */
+/* 185 */
 /*!*****************************************!*\
   !*** ./~/react-hot-loader/lib/index.js ***!
   \*****************************************/
@@ -22619,7 +22728,7 @@
 
 	'use strict';
 	
-	var AppContainer = __webpack_require__(/*! ./AppContainer */ 185);
+	var AppContainer = __webpack_require__(/*! ./AppContainer */ 186);
 	
 	module.exports = function warnAboutIncorrectUsage(arg) {
 	  if (this && this.callback) {
@@ -22634,7 +22743,7 @@
 	module.exports.AppContainer = AppContainer;
 
 /***/ },
-/* 185 */
+/* 186 */
 /*!************************************************!*\
   !*** ./~/react-hot-loader/lib/AppContainer.js ***!
   \************************************************/
@@ -22645,13 +22754,13 @@
 	'use strict';
 	
 	if (true) {
-	  module.exports = __webpack_require__(/*! ./AppContainer.prod */ 186);
+	  module.exports = __webpack_require__(/*! ./AppContainer.prod */ 187);
 	} else {
 	  module.exports = require('./AppContainer.dev');
 	}
 
 /***/ },
-/* 186 */
+/* 187 */
 /*!*****************************************************!*\
   !*** ./~/react-hot-loader/lib/AppContainer.prod.js ***!
   \*****************************************************/

@@ -22,9 +22,20 @@
       color: white;  
       text-decoration: none;
       @extend %small-bold;
+      
+      &:before {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 1px;
+        width: 0px;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+      }
 
-      &:hover {
-        opacity: 0.8;
+      &:hover:before {
+        width: 100%;
+        background: white;
       }
     
     }

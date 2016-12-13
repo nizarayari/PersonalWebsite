@@ -2,7 +2,8 @@ import React from "react";
 
 
 import Header from "./header";
-import Footer from "./footer"
+import Footer from "./footer";
+import About from "./about";
 
 export default class App extends React.Component {
 
@@ -10,6 +11,7 @@ export default class App extends React.Component {
     return (
       <div>
         <Header/>
+        <About/>
         <Footer/>
       </div>
     );
