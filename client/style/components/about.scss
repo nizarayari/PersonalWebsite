@@ -7,7 +7,7 @@
   @include display(flex);
   margin: 0 auto;
   @include align-items(center);
-  @include justify-content(space-around);
+  @include justify-content(space-between);
 
   .face-img {
     @include size(200px);
@@ -15,7 +15,7 @@
     background-size: cover;
     opacity:0.8;
     border-radius: 50%;
-    order: 3;
+    @include order(3);
   }
 
   [class^='icon-'] {
@@ -24,16 +24,16 @@
     background: $bgcolor;
     
     &.icon-pencil {
-      order:1;
+      @include order(1);
     }
     &.icon-mouse {
-      order:4;
+      @include order(4);
     }
     &.icon-browser {
-      order:2;
+      @include order(2);
     }
     &.icon-video {
-      order:5;
+      @include order(5);
     }
 
 
@@ -60,6 +60,15 @@ h3 {
   margin: 50px auto;
   font-size: 24px;
   font-weight: 300;
+  a {
+    text-decoration:none;
+    font-weight: 500;
+    color:$accent;
+    &:hover {
+      cursor:pointer;
+      opacity:0.5;
+    }
+  }
 }
 
 @media screen and (max-width:640px){

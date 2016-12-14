@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
+
 export default class Footer extends Component {
-
-
 
   render(){
 
@@ -15,10 +14,10 @@ export default class Footer extends Component {
           <div className='content-wraper'> 
 
             <nav>
-              <a href=''> About Me </a>
-              <a href=''> Work </a>
-              <a href=''> Articles </a>
-              <a href=''> Contact </a>
+              <a href='#about-me'> About Me </a>
+              <a href='#me'> Work </a>
+              <a href='#articles'> Articles </a>
+              <a href='#contact'> Contact </a>
             </nav>
 
             <p className="copyright"> All content copyright 2016 </p>

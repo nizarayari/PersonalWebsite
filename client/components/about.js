@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
+import SkillSet from './skillSet'
 
 export default class About extends Component {
-
-
 
   render(){
 
     return (
       <div className='about'>
 
-        <h3> About myself </h3>
+        <h3 id='about-me'> About myself </h3>
 
         <div className='face-lockup'>
 
@@ -24,82 +23,11 @@ export default class About extends Component {
         </div>
 
         <div className='blurb'>
-          <p> <strong>sjdgjkasdhvakdsh</strong> basdhbadhlbhdzlbhjlkdzb
-          dsbnjda.bkjadjadfjbvndajfbhdhsb;dafbladfbl
-          sdabad.kjbhkdajhfbkjadhfbvkjdjdzxjkbzdjfbn 
-          dbndjsa,.b.jdbfjdjdfjv zfdjb zjfdfb zfx
-          sdbv.jsdbjkdb jzbfxjb zf.jb jzxb jbzxfj bdzf
-          sdabvm,db ,hzxbc b Bzxcjb zjb kjzfd </p>
+          <p> <strong>Nizar mostly deals with front-end code.</strong> He originally studied Financial Engineering , but found an overwhelming excitement for new technologies. To fully immerse himself in the field, he spent two years trying to learn as much as possible, completely throwing himself into the task and graduated from the well-known advanced immersive Software Engineering <a href='http://www.hackreactor.com/' target="_blank"> Hack Reactor</a>. 
+          </p>
         </div>
 
-        <div className='skill-lockup'>
-          
-          <div className='skill-unit'>
-            <div className='skill-label'> Communication </div>
-            <div className='skill-icons skill-8'>
-              <span/> <span/> <span/> <span/> <span/>
-              <span/> <span/> <span/> <span/> <span/>
-            </div>
-          </div>
-
-          <div className='skill-unit'>
-            <div className='skill-label'> Organization </div>
-            <div className='skill-icons skill-8'>
-              <span/> <span/> <span/> <span/> <span/>
-              <span/> <span/> <span/> <span/> <span/>
-            </div>
-          </div>
-
-          <div className='skill-unit'>
-            <div className='skill-label'> Learning </div>
-            <div className='skill-icons skill-8'>
-              <span/> <span/> <span/> <span/> <span/>
-              <span/> <span/> <span/> <span/> <span/>
-            </div>
-          </div>
-
-          <div className='skill-unit'>
-            <div className='skill-label'> Teaching </div>
-            <div className='skill-icons skill-6'>
-              <span/> <span/> <span/> <span/> <span/>
-              <span/> <span/> <span/> <span/> <span/>
-            </div>
-          </div>
-
-          <div className='skill-unit'>
-            <div className='skill-label'> Planning </div>
-            <div className='skill-icons skill-7'>
-              <span/> <span/> <span/> <span/> <span/>
-              <span/> <span/> <span/> <span/> <span/>
-            </div>
-          </div>
-
-          <div className='skill-unit'>
-            <div className='skill-label'> Visual Design</div>
-            <div className='skill-icons skill-5'>
-              <span/> <span/> <span/> <span/> <span/>
-              <span/> <span/> <span/> <span/> <span/>
-            </div>
-          </div>
-
-          <div className='skill-unit'>
-            <div className='skill-label'> UX Design</div>
-            <div className='skill-icons skill-6'>
-              <span/> <span/> <span/> <span/> <span/>
-              <span/> <span/> <span/> <span/> <span/>
-            </div>
-          </div>
-
-          <div className='skill-unit'>
-            <div className='skill-label'> Programming</div>
-            <div className='skill-icons skill-8'>
-              <span/> <span/> <span/> <span/> <span/>
-              <span/> <span/> <span/> <span/> <span/>
-            </div>
-          </div>
-
-
-        </div>
+        <SkillSet/>
 
       </div>
     )

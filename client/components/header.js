@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 export default class Header extends Component {
 
-
+  componentDidMount(){
+    $(window).scroll(function(){
+      var wScroll = $(this).scrollTop();
+      if(wScroll<306){
+        $('.intro').css({
+          'transform': 'translate(0px, '+ wScroll/2 +'px)'
+        })
+      }
+      
+    })
+  }
 
   render(){
 
@@ -12,14 +23,16 @@ export default class Header extends Component {
         <img className='logo' src='../assets/logo2.png' />
 
         <nav>
-          <a href=''> About Me </a>
-          <a href=''> Work </a>
-          <a href=''> Articles </a>
-          <a href=''> Contact </a>
+          <a href='#about-me'> About Me </a>
+          <a href='#me'> Work </a>
+          <a href='#articles'> Articles </a>
+          <a href='#contact'> Contact </a>
         </nav>
 
-        <h1> <span> JavaScript Enthousiast </span> </h1>
-        <p className='subtitle'> Hello there! </p>
+        <div className='intro'>
+          <h1> <span> JavaScript Enthousiast </span> </h1>
+          <p className='subtitle'> Hello there! </p>
+        </div>
 
       </div>
     )

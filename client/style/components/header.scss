@@ -1,9 +1,12 @@
 
 .header {
   height: 450px;
-  background: url("../assets/header.png") center center;
-  background-size: cover;
-
+  background:{
+    image: url("../assets/header.png");
+    size: cover;
+    attachment: fixed;
+    }
+  position:relative;   
   .logo {
     float: left;
     margin: 10px 0 0 30px;
@@ -41,32 +44,41 @@
     }
   }
 
-  h1 {
-    font:{
-      size:72px;
-      weight:700;
+  .intro {
+    position:relative;
+    width:100%;
+    top:15%;
+    margin-top:-60px;
+    display:inline-block;
+      h1 {
+      font:{
+        size:72px;
+        weight:700;
+      }
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 0.05em;
+      text-align: center;
+      
+      span {
+        border : white solid 10px;
+        display: inline-block;
+        padding: 0.2em 0.5em;
+      }
+    clear: both; //clearing floating logo and nav
     }
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 0.05em;
-    text-align: center;
-    
-    span {
-      border : white solid 10px;
-      display: inline-block;
-      padding: 0.2em 0.5em;
+
+    .subtitle {
+      text-align: center;
+      @extend %small-bold;
+      color:white;
+      letter-spacing: 0.3em;
+      line-height: 1;
+
     }
-  clear: both; //clearing floating logo and nav
-  padding-top: 100px;
+
   }
 
-  .subtitle {
-    text-align: center;
-    @extend %small-bold;
-    color:white;
-    letter-spacing: 0.3em;
-    line-height: 1;
 
-  }
 
 }
