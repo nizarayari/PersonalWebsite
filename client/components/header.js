@@ -6,7 +6,7 @@ export default class Header extends Component {
   componentDidMount(){
     $(window).scroll(function(){
       var wScroll = $(this).scrollTop();
-      if(wScroll<306){
+      if(wScroll < 306){
         $('.intro').css({
           'transform': 'translate(0px, '+ wScroll/2 +'px)'
         })

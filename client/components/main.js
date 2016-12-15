@@ -5,12 +5,12 @@ import $ from "jquery";
 import Header from "./header";
 import Footer from "./footer";
 import About from "./about";
+import Work from "./work";
 
 export default class App extends React.Component {
 
 
 componentDidMount(){
-  console.log('hello')
   this.smoothScroll(1000);
 }
 
@@ -36,6 +36,7 @@ smoothScroll(duration){
       <div>
         <Header/>
         <About/>
+        <Work/>
         <Footer/>
       </div>
     );

@@ -113,7 +113,7 @@
 	
 	var _main4 = _interopRequireDefault(_main3);
 	
-	var _reactHotLoader = __webpack_require__(/*! react-hot-loader */ 187);
+	var _reactHotLoader = __webpack_require__(/*! react-hot-loader */ 188);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22474,7 +22474,7 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	var _about = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./about\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _about = __webpack_require__(/*! ./about */ 186);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
@@ -33011,18 +33011,265 @@
 	;
 
 /***/ },
-/* 186 */,
+/* 186 */
+/*!************************************!*\
+  !*** ./client/components/about.js ***!
+  \************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 5);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _skillSet = __webpack_require__(/*! ./skillSet */ 187);
+	
+	var _skillSet2 = _interopRequireDefault(_skillSet);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var About = function (_Component) {
+	  _inherits(About, _Component);
+	
+	  function About() {
+	    _classCallCheck(this, About);
+	
+	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+	  }
+	
+	  _createClass(About, [{
+	    key: 'render',
+	    value: function render() {
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'about' },
+	        _react2.default.createElement(
+	          'h3',
+	          { id: 'about-me' },
+	          ' About myself '
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'face-lockup' },
+	          _react2.default.createElement('div', { className: 'face-img' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'icon-pencil' },
+	            ' ',
+	            _react2.default.createElement('i', { className: 'fa fa-pencil', 'aria-hidden': 'true' }),
+	            ' '
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'icon-mouse' },
+	            ' ',
+	            _react2.default.createElement('i', { className: 'fa fa-code', 'aria-hidden': 'true' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'icon-browser' },
+	            ' ',
+	            _react2.default.createElement('i', { className: 'fa fa-youtube-play', 'aria-hidden': 'true' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'icon-video' },
+	            ' ',
+	            _react2.default.createElement('i', { className: 'fa fa-laptop', 'aria-hidden': 'true' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'blurb' },
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            ' ',
+	            _react2.default.createElement(
+	              'strong',
+	              null,
+	              'Nizar mostly deals with front-end code.'
+	            ),
+	            ' He originally studied Financial Engineering , but found an overwhelming excitement for new technologies. To fully immerse himself in the field, he spent two years trying to learn as much as possible, completely throwing himself into the task and graduated from the well-known advanced immersive Software Engineering ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'http://www.hackreactor.com/', target: '_blank' },
+	              ' Hack Reactor'
+	            ),
+	            '.'
+	          )
+	        ),
+	        _react2.default.createElement(_skillSet2.default, null)
+	      );
+	    }
+	  }]);
+	
+	  return About;
+	}(_react.Component);
+	
+	var _default = About;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(About, 'About', '/Users/nizarayari/Desktop/PersonalWebsite/client/components/about.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/nizarayari/Desktop/PersonalWebsite/client/components/about.js');
+	}();
+
+	;
+
+/***/ },
 /* 187 */
+/*!***************************************!*\
+  !*** ./client/components/skillSet.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 5);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var SkillSet = function (_Component) {
+	  _inherits(SkillSet, _Component);
+	
+	  function SkillSet() {
+	    _classCallCheck(this, SkillSet);
+	
+	    return _possibleConstructorReturn(this, (SkillSet.__proto__ || Object.getPrototypeOf(SkillSet)).apply(this, arguments));
+	  }
+	
+	  _createClass(SkillSet, [{
+	    key: 'skillSet',
+	    value: function skillSet() {
+	      var skills = {
+	        Communication: 8,
+	        Organization: 8,
+	        Learning: 8,
+	        Teaching: 6,
+	        Planning: 7,
+	        'Visual Design': 5,
+	        'UX Design': 6,
+	        Programming: 8
+	      };
+	
+	      var skillsViews = [];
+	
+	      for (var skill in skills) {
+	        skillsViews.push(_react2.default.createElement(
+	          'div',
+	          { className: 'skill-unit' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'skill-label' },
+	            ' ',
+	            skill,
+	            ' '
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'skill-icons skill-' + skills[skill] },
+	            _react2.default.createElement('span', null),
+	            ' ',
+	            _react2.default.createElement('span', null),
+	            ' ',
+	            _react2.default.createElement('span', null),
+	            ' ',
+	            _react2.default.createElement('span', null),
+	            ' ',
+	            _react2.default.createElement('span', null),
+	            _react2.default.createElement('span', null),
+	            ' ',
+	            _react2.default.createElement('span', null),
+	            ' ',
+	            _react2.default.createElement('span', null),
+	            ' ',
+	            _react2.default.createElement('span', null),
+	            ' ',
+	            _react2.default.createElement('span', null)
+	          )
+	        ));
+	      }
+	
+	      return skillsViews;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'skill-lockup' },
+	        this.skillSet()
+	      );
+	    }
+	  }]);
+	
+	  return SkillSet;
+	}(_react.Component);
+	
+	var _default = SkillSet;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(SkillSet, 'SkillSet', '/Users/nizarayari/Desktop/PersonalWebsite/client/components/skillSet.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/nizarayari/Desktop/PersonalWebsite/client/components/skillSet.js');
+	}();
+
+	;
+
+/***/ },
+/* 188 */
 /*!*************************************!*\
   !*** ./~/react-hot-loader/index.js ***!
   \*************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(/*! ./lib/index */ 188);
+	module.exports = __webpack_require__(/*! ./lib/index */ 189);
 
 
 /***/ },
-/* 188 */
+/* 189 */
 /*!*****************************************!*\
   !*** ./~/react-hot-loader/lib/index.js ***!
   \*****************************************/
@@ -33030,7 +33277,7 @@
 
 	'use strict';
 	
-	var AppContainer = __webpack_require__(/*! ./AppContainer */ 189);
+	var AppContainer = __webpack_require__(/*! ./AppContainer */ 190);
 	
 	module.exports = function warnAboutIncorrectUsage(arg) {
 	  if (this && this.callback) {
@@ -33045,7 +33292,7 @@
 	module.exports.AppContainer = AppContainer;
 
 /***/ },
-/* 189 */
+/* 190 */
 /*!************************************************!*\
   !*** ./~/react-hot-loader/lib/AppContainer.js ***!
   \************************************************/
@@ -33056,13 +33303,13 @@
 	'use strict';
 	
 	if (true) {
-	  module.exports = __webpack_require__(/*! ./AppContainer.prod */ 190);
+	  module.exports = __webpack_require__(/*! ./AppContainer.prod */ 191);
 	} else {
 	  module.exports = require('./AppContainer.dev');
 	}
 
 /***/ },
-/* 190 */
+/* 191 */
 /*!*****************************************************!*\
   !*** ./~/react-hot-loader/lib/AppContainer.prod.js ***!
   \*****************************************************/

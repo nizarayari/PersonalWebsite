@@ -12,11 +12,13 @@ body {
 //base
 @import 'base/colors';
 @import 'base/placeholders';
+@import 'base/spinner';
 
 //components
 @import 'components/header';
 @import 'components/footer';
 @import 'components/about';
+@import 'components/work';
 
 
 

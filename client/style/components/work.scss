@@ -1,0 +1,154 @@
+.work-lockup{
+  background-color:$bgcolor;
+  text-align: center;
+  overflow-x:hidden;
+}
+
+.work-belt {
+  width:200%;
+  position:relative;
+  left: 0%;
+  @include transition(all 800ms)
+ 
+}
+
+.work-wrap{
+  text-align: left;
+}
+
+.thumb-wrap, .work-wrap {
+  width:50%;
+  float:left;
+}
+
+.thumb-container {
+  max-width:960px;
+  margin:0 auto;
+  padding-bottom: 100px;
+  @include clearfix;
+
+  .thumb-unit{
+    display: block;
+    width:33.33333%;
+    background-color:#fff;
+    float:left;
+    padding-top:30%;
+    position:relative;
+    overflow:hidden;
+
+    background:{
+      image: url("../assets/header.png");
+      size: cover;
+      position: center center;
+      repeat: no-repeat;
+      }
+
+    @media screen and (max-width:530px){
+      width:50%;
+      padding-top:55%;
+    }
+    @include perspective(300);
+
+    .thumb-overlay{
+      @include position(absolute, -50% 0px null 0px);
+      height:100%;
+      background: fade-out($accent,0.1);
+      @include transition(500ms);
+      text-align:center;
+      opacity: 0;
+
+      @include transform(rotateX(90deg));
+      @include transform-origin(center bottom);
+  
+      strong {
+        display:block;
+        padding: 0px 10px;
+        padding-top:30%;
+        color:white;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 1.2;
+      }
+
+      .zoom-icon {
+        position: relative;
+
+        .ion-ios-search {
+          color:white;
+          font-size: 60px;
+          @include position(absolute, 0px 0px 0px 0px);
+        }
+
+        .ion-ios-plus-empty {
+          color:white;
+          font-size: 45px;
+          @include position(absolute, 5px 9px 0px 0px);
+        }
+
+      }
+
+    }
+
+    &:hover .thumb-overlay{
+      top:0%;
+      @include transform(rotateX(0deg));
+      opacity:1;
+    }
+
+
+  }
+}
+
+.work-container {
+  max-width:600px;
+  margin:0 auto;
+  position:relative;
+  display:none;
+
+  .work-return{
+    @include size(70px);
+    cursor:pointer;
+    opacity:0.5;
+    @include position(absolute, -20px null null -60px)
+    
+    &:hover{
+      opacity: 0.8;
+    }
+    i { 
+      font-size:50px;
+    }
+
+  }
+  
+  h4 {
+    color: $accent;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+
+  }
+
+
+  img {
+    width:100%;
+    margin-bottom:20px;
+
+  }
+
+}
+
+
+
+@media screen and (max-width: 730px) {
+  .work-container {
+    .work-return {
+      left:0
+    }
+    h4 {
+      margin-left:50px
+    }
+  }
+}

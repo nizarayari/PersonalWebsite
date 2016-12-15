@@ -4,6 +4,8 @@
   background:{
     image: url("../assets/header.png");
     size: cover;
+    position: center center;
+    repeat:no-repeat;
     attachment: fixed;
     }
   position:relative;   
