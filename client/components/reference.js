@@ -80,11 +80,28 @@ export default class Reference extends Component {
       const { logo } = refList[ref]
       let isActive = this.state.currentRef === ref ? 'active-ref' : ''
       refLogoViews.push(
-        <div onClick={()=>{this.handleRef(ref)}} className={`ref-logo ${isActive}`} style={{ backgroundImage: `url(${ logo })`}}> </div>
+        <img 
+          onClick={()=>{this.handleRef(ref)}} 
+          className={`ref-logo ${isActive}`} 
+          src={ logo }
+        /> 
       )
 
     }
     return refLogoViews;
+  }
+
+  refMobile(){
+    let refMobile = [];
+    for(let ref in refList) {
+      const { name } = refList[ref]
+      let isActive = this.state.currentRef === ref ? 'active-ref' : ''
+      refMobile.push(
+        <span className={isActive} onClick={()=>{this.handleRef(ref)}}/> 
+      )
+
+    }
+    return refMobile;
   }
 
 
@@ -93,6 +110,11 @@ export default class Reference extends Component {
     return (
           <div className='ref-lockup'>
             <h3 id='ref'> References </h3>
+
+            <div className='ref-mobile-nav'>
+              {this.refMobile()}
+            </div>
+
             <div className='ref-controls'>
               <i className="ion-chevron-left" onClick={()=>{this.handlePrev()}}></i>
               <i className="ion-chevron-right" onClick={()=>{this.handleNext()}}></i>

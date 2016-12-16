@@ -1,4 +1,12 @@
 
+// Initial Class
+%animationstart_bounceOut{
+  height: 0%;
+  width: 0%;
+  top: 0%;
+  overflow: hidden;
+}
+
 // Animation Class
 %bounceOut {
   -webkit-animation: animation 1s linear both;

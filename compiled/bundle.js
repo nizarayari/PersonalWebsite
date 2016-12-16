@@ -109,11 +109,11 @@
 	
 	var _main2 = _interopRequireDefault(_main);
 	
-	var _main3 = __webpack_require__(/*! ./main.js */ 183);
+	var _main3 = __webpack_require__(/*! ./main.js */ 182);
 	
 	var _main4 = _interopRequireDefault(_main3);
 	
-	var _reactHotLoader = __webpack_require__(/*! react-hot-loader */ 194);
+	var _reactHotLoader = __webpack_require__(/*! react-hot-loader */ 193);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22043,7 +22043,7 @@
 	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader?includePaths[]=/Users/nizarayari/Desktop/PersonalWebsite/~/node-bourbon/~/bourbon/app/assets/stylesheets!./main.scss */ 177);
 	if (typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 182)(content, {});
+	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 181)(content, {});
 	if (content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if (false) {
@@ -22084,7 +22084,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\n  margin: 0;\n  padding: 0;\n  font-family: \"Source Sans Pro\";\n  -webkit-font-smoothing: antialiased; }\n\n.header nav a, .header .intro .subtitle, .footer .lockup .content-wraper .copyright, .footer .lockup .content-wraper a, h3 {\n  font-family: 'Source Sans Pro';\n  font-weight: 600;\n  font-size: 20px;\n  text-transform: uppercase; }\n\n.loader,\n.loader:before,\n.loader:after {\n  border-radius: 50%; }\n\n.loader {\n  color: #1f9fd7;\n  font-size: 11px;\n  text-indent: -99999em;\n  margin: 55px auto;\n  position: relative;\n  width: 10em;\n  height: 10em;\n  box-shadow: inset 0 0 0 1em;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0); }\n\n.loader:before,\n.loader:after {\n  position: absolute;\n  content: ''; }\n\n.loader:before {\n  width: 5.2em;\n  height: 10.2em;\n  background: #e5eaee;\n  border-radius: 10.2em 0 0 10.2em;\n  top: -0.1em;\n  left: -0.1em;\n  -webkit-transform-origin: 5.2em 5.1em;\n  transform-origin: 5.2em 5.1em;\n  -webkit-animation: load2 2s infinite ease 1.5s;\n  animation: load2 2s infinite ease 1.5s; }\n\n.loader:after {\n  width: 5.2em;\n  height: 10.2em;\n  background: #e5eaee;\n  border-radius: 0 10.2em 10.2em 0;\n  top: -0.1em;\n  left: 5.1em;\n  -webkit-transform-origin: 0px 5.1em;\n  transform-origin: 0px 5.1em;\n  -webkit-animation: load2 2s infinite ease;\n  animation: load2 2s infinite ease; }\n\n@-webkit-keyframes load2 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes load2 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n.header {\n  height: 450px;\n  background-image: url(" + __webpack_require__(/*! ../assets/header.png */ 179) + ");\n  background-size: cover;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  position: relative; }\n  .header .logo {\n    float: left;\n    margin: 10px 0 0 30px;\n    border: white solid 1px;\n    border-radius: 100%;\n    opacity: 0.8;\n    height: 100px;\n    width: 100px; }\n  .header nav {\n    float: right;\n    margin: 30px 30px 0px 0px; }\n    .header nav a {\n      display: inline-block;\n      margin-left: 20px;\n      color: white;\n      text-decoration: none; }\n      .header nav a:before {\n        content: '';\n        display: block;\n        margin: auto;\n        height: 1px;\n        width: 0px;\n        background: transparent;\n        transition: width .5s ease, background-color .5s ease; }\n      .header nav a:hover:before {\n        width: 100%;\n        background: white; }\n  .header .intro {\n    position: relative;\n    width: 100%;\n    top: 15%;\n    margin-top: -60px;\n    display: inline-block; }\n    .header .intro h1 {\n      font-size: 72px;\n      font-weight: 700;\n      text-transform: uppercase;\n      color: white;\n      letter-spacing: 0.05em;\n      text-align: center;\n      clear: both; }\n      .header .intro h1 span {\n        border: white solid 10px;\n        display: inline-block;\n        padding: 0.2em 0.5em; }\n    .header .intro .subtitle {\n      text-align: center;\n      color: white;\n      letter-spacing: 0.3em;\n      line-height: 1; }\n\n.footer {\n  background: url(" + __webpack_require__(/*! ../assets/header.png */ 179) + ") center center;\n  background-size: cover; }\n  .footer::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n  .footer .lockup {\n    padding: 50px 30px; }\n    .footer .lockup .logo {\n      height: 50px;\n      width: 50px;\n      border-radius: 100%;\n      float: left;\n      margin-right: 30px;\n      margin-bottom: 20px;\n      opacity: 0.5; }\n    .footer .lockup .content-wraper {\n      float: left;\n      padding-top: 5px; }\n      .footer .lockup .content-wraper .copyright {\n        margin: 0;\n        color: #ccc; }\n      .footer .lockup .content-wraper a {\n        text-decoration: none;\n        color: white;\n        margin-right: 20px; }\n        .footer .lockup .content-wraper a:hover {\n          opacity: 0.8; }\n\n.about {\n  text-align: center; }\n\n.face-lockup {\n  max-width: 780px;\n  display: -webkit-box;\n  display: -moz-box;\n  display: box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  -webkit-box-align: center;\n  -moz-box-align: center;\n  box-align: center;\n  -webkit-align-items: center;\n  -moz-align-items: center;\n  -ms-align-items: center;\n  -o-align-items: center;\n  align-items: center;\n  -ms-flex-align: center;\n  -webkit-box-pack: justify;\n  -moz-box-pack: justify;\n  box-pack: justify;\n  -webkit-justify-content: space-between;\n  -moz-justify-content: space-between;\n  -ms-justify-content: space-between;\n  -o-justify-content: space-between;\n  justify-content: space-between;\n  -ms-flex-pack: justify; }\n  .face-lockup .face-img {\n    height: 200px;\n    width: 200px;\n    background: url(" + __webpack_require__(/*! ../assets/face.jpg */ 180) + ") center center;\n    background-size: cover;\n    opacity: 0.8;\n    border-radius: 50%;\n    -webkit-box-ordinal-group: 3;\n    -moz-box-ordinal-group: 3;\n    box-ordinal-group: 3;\n    -webkit-order: 3;\n    -moz-order: 3;\n    order: 3;\n    -ms-flex-order: 3; }\n  .face-lockup [class^='icon-'] {\n    height: 100px;\n    width: 100px;\n    border-radius: 50%;\n    background: #e5eaee; }\n    .face-lockup [class^='icon-'].icon-pencil {\n      -webkit-box-ordinal-group: 1;\n      -moz-box-ordinal-group: 1;\n      box-ordinal-group: 1;\n      -webkit-order: 1;\n      -moz-order: 1;\n      order: 1;\n      -ms-flex-order: 1; }\n    .face-lockup [class^='icon-'].icon-mouse {\n      -webkit-box-ordinal-group: 4;\n      -moz-box-ordinal-group: 4;\n      box-ordinal-group: 4;\n      -webkit-order: 4;\n      -moz-order: 4;\n      order: 4;\n      -ms-flex-order: 4; }\n    .face-lockup [class^='icon-'].icon-browser {\n      -webkit-box-ordinal-group: 2;\n      -moz-box-ordinal-group: 2;\n      box-ordinal-group: 2;\n      -webkit-order: 2;\n      -moz-order: 2;\n      order: 2;\n      -ms-flex-order: 2; }\n    .face-lockup [class^='icon-'].icon-video {\n      -webkit-box-ordinal-group: 5;\n      -moz-box-ordinal-group: 5;\n      box-ordinal-group: 5;\n      -webkit-order: 5;\n      -moz-order: 5;\n      order: 5;\n      -ms-flex-order: 5; }\n    .face-lockup [class^='icon-'] i {\n      font-size: 50px;\n      line-height: 100px;\n      color: #1f9fd7; }\n\nh3 {\n  color: #1f9fd7;\n  display: inline-block;\n  padding: 100px 0 30px 0; }\n\n.blurb {\n  padding: 0 15px;\n  max-width: 620px;\n  margin: 50px auto;\n  font-size: 24px;\n  font-weight: 300; }\n  .blurb a {\n    text-decoration: none;\n    font-weight: 500;\n    color: #1f9fd7; }\n    .blurb a:hover {\n      cursor: pointer;\n      opacity: 0.5; }\n\n@media screen and (max-width: 640px) {\n  .face-lockup {\n    display: block; }\n    .face-lockup .face-img {\n      margin: 0 auto;\n      margin-bottom: 30px; }\n    .face-lockup [class^='icon-'] {\n      display: inline-block;\n      margin: 10px; } }\n\n.skill-lockup {\n  max-width: 700px;\n  margin: 50px auto;\n  color: #999; }\n  .skill-lockup::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n  .skill-lockup .skill-unit {\n    width: 350px;\n    float: left; }\n    .skill-lockup .skill-unit .skill-label {\n      width: 250px;\n      text-align: left;\n      margin-left: 65px; }\n    .skill-lockup .skill-unit .skill-icons {\n      font-size: 0;\n      margin: 0px 0 30px; }\n      .skill-lockup .skill-unit .skill-icons span {\n        display: inline-block;\n        height: 14px;\n        width: 14px;\n        background: #1f9fd7;\n        margin-right: 8px;\n        border-radius: 50%; }\n        .skill-lockup .skill-unit .skill-icons span:after {\n          content: '';\n          display: block;\n          height: 10px;\n          width: 10px;\n          border-radius: 50%;\n          background: #fff;\n          margin: 2px; }\n\n@media screen and (max-width: 700px) {\n  .skill-lockup {\n    width: 350px; } }\n\n.skill-lockup .skill-unit .skill-icons.skill-1 span:nth-child(n+2), .skill-lockup .skill-unit .skill-icons.skill-2 span:nth-child(n+3), .skill-lockup .skill-unit .skill-icons.skill-3 span:nth-child(n+4), .skill-lockup .skill-unit .skill-icons.skill-4 span:nth-child(n+5), .skill-lockup .skill-unit .skill-icons.skill-5 span:nth-child(n+6), .skill-lockup .skill-unit .skill-icons.skill-6 span:nth-child(n+7), .skill-lockup .skill-unit .skill-icons.skill-7 span:nth-child(n+8), .skill-lockup .skill-unit .skill-icons.skill-8 span:nth-child(n+9), .skill-lockup .skill-unit .skill-icons.skill-9 span:nth-child(n+10), .skill-lockup .skill-unit .skill-icons.skill-10 span:nth-child(n+11) {\n  background: #e5eaee; }\n\n.work-lockup {\n  background-color: #e5eaee;\n  text-align: center;\n  overflow-x: hidden; }\n\n.work-belt {\n  width: 200%;\n  position: relative;\n  left: 0%;\n  -webkit-transition: all 800ms;\n  -moz-transition: all 800ms;\n  transition: all 800ms; }\n\n.work-wrap {\n  text-align: left; }\n\n.thumb-wrap, .work-wrap {\n  width: 50%;\n  float: left; }\n\n.thumb-container {\n  max-width: 960px;\n  margin: 0 auto;\n  padding-bottom: 100px; }\n  .thumb-container::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n  .thumb-container .thumb-unit {\n    display: block;\n    width: 33.33333%;\n    background-color: #fff;\n    float: left;\n    padding-top: 30%;\n    position: relative;\n    overflow: hidden;\n    background-image: url(" + __webpack_require__(/*! ../assets/header.png */ 179) + ");\n    background-size: cover;\n    background-position: center center;\n    background-repeat: no-repeat;\n    -webkit-perspective: 300;\n    -moz-perspective: 300;\n    perspective: 300; }\n    @media screen and (max-width: 530px) {\n      .thumb-container .thumb-unit {\n        width: 50%;\n        padding-top: 55%; } }\n    .thumb-container .thumb-unit .thumb-overlay {\n      position: absolute;\n      top: -50%;\n      right: 0px;\n      left: 0px;\n      height: 100%;\n      background: rgba(31, 159, 215, 0.9);\n      -webkit-transition: 500ms;\n      -moz-transition: 500ms;\n      transition: 500ms;\n      text-align: center;\n      opacity: 0;\n      -webkit-transform: rotateX(90deg);\n      -moz-transform: rotateX(90deg);\n      -ms-transform: rotateX(90deg);\n      -o-transform: rotateX(90deg);\n      transform: rotateX(90deg);\n      -webkit-transform-origin: center bottom;\n      -moz-transform-origin: center bottom;\n      -ms-transform-origin: center bottom;\n      -o-transform-origin: center bottom;\n      transform-origin: center bottom; }\n      .thumb-container .thumb-unit .thumb-overlay strong {\n        display: block;\n        padding: 0px 10px;\n        padding-top: 30%;\n        color: white;\n        font-weight: 300;\n        text-transform: uppercase;\n        font-size: 24px;\n        line-height: 1.2; }\n      .thumb-container .thumb-unit .thumb-overlay .zoom-icon {\n        position: relative;\n        opacity: 0.8; }\n        .thumb-container .thumb-unit .thumb-overlay .zoom-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n        .thumb-container .thumb-unit .thumb-overlay .zoom-icon .ion-ios-search {\n          color: white;\n          font-size: 60px;\n          position: absolute;\n          top: 0px;\n          right: 0px;\n          bottom: 0px;\n          left: 0px; }\n        .thumb-container .thumb-unit .thumb-overlay .zoom-icon .ion-ios-plus-empty {\n          color: white;\n          font-size: 45px;\n          position: absolute;\n          top: 5px;\n          right: 9px;\n          bottom: 0px;\n          left: 0px; }\n    .thumb-container .thumb-unit:hover .thumb-overlay {\n      top: 0%;\n      -webkit-transform: rotateX(0deg);\n      -moz-transform: rotateX(0deg);\n      -ms-transform: rotateX(0deg);\n      -o-transform: rotateX(0deg);\n      transform: rotateX(0deg);\n      opacity: 1; }\n\n.work-container {\n  max-width: 600px;\n  margin: 0 auto;\n  position: relative;\n  display: none; }\n  .work-container .work-return {\n    height: 70px;\n    width: 70px;\n    cursor: pointer;\n    opacity: 0.5;\n    position: absolute;\n    top: -20px;\n    left: -60px; }\n    .work-container .work-return:hover {\n      opacity: 0.8; }\n    .work-container .work-return i {\n      font-size: 50px; }\n  .work-container h4 {\n    color: #1f9fd7;\n    font-weight: 300;\n    text-transform: uppercase;\n    font-size: 24px;\n    line-height: 1.2;\n    margin: 0 0 20px; }\n  .work-container img {\n    width: 100%;\n    margin-bottom: 20px; }\n\n@media screen and (max-width: 730px) {\n  .work-container .work-return {\n    left: 0; }\n  .work-container h4 {\n    margin-left: 50px; } }\n\n.ref-lockup {\n  text-align: center;\n  position: relative; }\n\n.ref-belt {\n  width: 100%;\n  position: relative; }\n  .ref-belt .ref-unit {\n    max-width: 750px;\n    margin: 0 auto 50px;\n    display: -webkit-box;\n    display: -moz-box;\n    display: box;\n    display: -webkit-flex;\n    display: -moz-flex;\n    display: -ms-flexbox;\n    display: flex; }\n    .ref-belt .ref-unit .ref-face {\n      min-width: 300px;\n      text-align: center; }\n      .ref-belt .ref-unit .ref-face img {\n        max-width: 100px;\n        border-radius: 50%; }\n      .ref-belt .ref-unit .ref-face a {\n        display: block; }\n        .ref-belt .ref-unit .ref-face a i {\n          font-size: 30px; }\n      .ref-belt .ref-unit .ref-face .ref-name {\n        display: block;\n        text-transform: uppercase;\n        font-weight: 400;\n        letter-spacing: 1px;\n        color: #999; }\n      .ref-belt .ref-unit .ref-face .ref-title {\n        font-style: normal;\n        font-size: 12px;\n        color: #999; }\n    .ref-belt .ref-unit .ref-content {\n      text-align: left;\n      font-size: 18px;\n      line-height: 36px;\n      font-weight: 300;\n      margin-top: -10px;\n      position: relative; }\n      .ref-belt .ref-unit .ref-content .end {\n        z-index: -1;\n        display: inline-block;\n        -webkit-transform: rotate(90deg);\n        -moz-transform: rotate(90deg);\n        -ms-transform: rotate(90deg);\n        -o-transform: rotate(90deg);\n        transform: rotate(90deg);\n        position: absolute;\n        top: 40%;\n        left: 105%; }\n      .ref-belt .ref-unit .ref-content .ion-quote {\n        font-size: 70px;\n        color: #1f9fd7;\n        opacity: 0.3; }\n        .ref-belt .ref-unit .ref-content .ion-quote.begin {\n          position: absolute;\n          top: -10%;\n          left: -3%;\n          z-index: -1; }\n\n.ref-logos {\n  position: relative;\n  max-width: 750px;\n  margin: 0 auto 100px;\n  display: -webkit-box;\n  display: -moz-box;\n  display: box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: space-around;\n  -moz-box-align: space-around;\n  box-align: space-around;\n  -webkit-align-items: space-around;\n  -moz-align-items: space-around;\n  -ms-align-items: space-around;\n  -o-align-items: space-around;\n  align-items: space-around;\n  -ms-flex-align: space-around;\n  -webkit-box-pack: center;\n  -moz-box-pack: center;\n  box-pack: center;\n  -webkit-justify-content: center;\n  -moz-justify-content: center;\n  -ms-justify-content: center;\n  -o-justify-content: center;\n  justify-content: center;\n  -ms-flex-pack: center; }\n  .ref-logos .ref-logo {\n    height: 80px;\n    min-width: 280px;\n    background-image: url(" + __webpack_require__(/*! ../assets/ref_logo/kpmg.png */ 181) + ");\n    background-size: contain;\n    background-position: center;\n    background-repeat: no-repeat;\n    cursor: pointer;\n    margin: 0 10px; }\n    .ref-logos .ref-logo.active-ref {\n      box-shadow: 0px 4px 0px #1f9fd7; }\n\n.ref-controls {\n  position: absolute;\n  width: 100%; }\n  .ref-controls::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n  .ref-controls .ion-chevron-left, .ref-controls .ion-chevron-right {\n    font-size: 50px;\n    opacity: 0.3;\n    color: #1f9fd7; }\n  .ref-controls .ion-chevron-left {\n    float: left;\n    left: 20px; }\n  .ref-controls .ion-chevron-right {\n    float: right; }\n\n.cont {\n  height: 600px;\n  width: 600px;\n  border: black solid 1px;\n  text-align: center; }\n  .cont .dropdown {\n    display: inline-block; }\n    .cont .dropdown > ul {\n      list-style: none;\n      display: inline-block; }\n      .cont .dropdown > ul > li {\n        float: left;\n        position: relative;\n        width: 50px; }\n\n.sublist {\n  position: absolute;\n  top: 100%;\n  left: 0%;\n  width: 100%;\n  padding: 0; }\n\nul.sublist li {\n  display: none; }\n\nli:hover > .sublist li {\n  display: block;\n  background: black;\n  margin: 5px; }\n\nli:hover > .sublist {\n  perspective: 1000px; }\n  li:hover > .sublist li {\n    opacity: 0; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: -150ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: 0ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: 150ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: 300ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n\n@keyframes menu {\n  0% {\n    opacity: 0;\n    transform: rotateY(-90deg) translateY(30px); }\n  100% {\n    opacity: 1;\n    transform: rotateY(0deg) translateY(0px); } }\n", ""]);
+	exports.push([module.id, "body {\n  margin: 0;\n  padding: 0;\n  font-family: \"Source Sans Pro\";\n  -webkit-font-smoothing: antialiased; }\n\n.header nav a, .header .intro .subtitle, .footer .lockup .content-wraper .copyright, .footer .lockup .content-wraper a, h3 {\n  font-family: 'Source Sans Pro';\n  font-weight: 600;\n  font-size: 20px;\n  text-transform: uppercase; }\n\n.loader,\n.loader:before,\n.loader:after {\n  border-radius: 50%; }\n\n.loader {\n  color: #1f9fd7;\n  font-size: 11px;\n  text-indent: -99999em;\n  margin: 55px auto;\n  position: relative;\n  width: 10em;\n  height: 10em;\n  box-shadow: inset 0 0 0 1em;\n  -webkit-transform: translateZ(0);\n  -ms-transform: translateZ(0);\n  transform: translateZ(0); }\n\n.loader:before,\n.loader:after {\n  position: absolute;\n  content: ''; }\n\n.loader:before {\n  width: 5.2em;\n  height: 10.2em;\n  background: #e5eaee;\n  border-radius: 10.2em 0 0 10.2em;\n  top: -0.1em;\n  left: -0.1em;\n  -webkit-transform-origin: 5.2em 5.1em;\n  transform-origin: 5.2em 5.1em;\n  -webkit-animation: load2 2s infinite ease 1.5s;\n  animation: load2 2s infinite ease 1.5s; }\n\n.loader:after {\n  width: 5.2em;\n  height: 10.2em;\n  background: #e5eaee;\n  border-radius: 0 10.2em 10.2em 0;\n  top: -0.1em;\n  left: 5.1em;\n  -webkit-transform-origin: 0px 5.1em;\n  transform-origin: 0px 5.1em;\n  -webkit-animation: load2 2s infinite ease;\n  animation: load2 2s infinite ease; }\n\n@-webkit-keyframes load2 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n@keyframes load2 {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg); } }\n\n.ref-belt .ref-unit.active-ref {\n  -webkit-animation: animation 1s linear both;\n  animation: animation 1s linear both;\n  z-index: 2; }\n\n@-webkit-keyframes animation {\n  0% {\n    height: 0%;\n    width: 0%;\n    -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  3.333333% {\n    height: 100%;\n    width: 100%;\n    -webkit-transform: matrix3d(0.34323, 0.11487, 0, 0, 0.07506, 0.34323, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.34323, 0.11487, 0, 0, 0.07506, 0.34323, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  6.666667% {\n    -webkit-transform: matrix3d(0.65416, 0.2159, 0, 0, 0.14115, 0.65416, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.65416, 0.2159, 0, 0, 0.14115, 0.65416, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  10% {\n    -webkit-transform: matrix3d(0.88518, 0.18431, 0, 0, 0.1219, 0.88518, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.88518, 0.18431, 0, 0, 0.1219, 0.88518, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  13.333333% {\n    -webkit-transform: matrix3d(1.02792, 0.0976, 0, 0, 0.06496, 1.02792, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.02792, 0.0976, 0, 0, 0.06496, 1.02792, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  16.666667% {\n    -webkit-transform: matrix3d(1.09602, 0.02621, 0, 0, 0.01747, 1.09602, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.09602, 0.02621, 0, 0, 0.01747, 1.09602, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  20% {\n    -webkit-transform: matrix3d(1.1117, -0.0094, 0, 0, -0.00627, 1.1117, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.1117, -0.0094, 0, 0, -0.00627, 1.1117, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  23.333333% {\n    -webkit-transform: matrix3d(1.09709, -0.01805, 0, 0, -0.01203, 1.09709, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.09709, -0.01805, 0, 0, -0.01203, 1.09709, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  26.666667% {\n    -webkit-transform: matrix3d(1.0698, -0.0143, 0, 0, -0.00954, 1.0698, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.0698, -0.0143, 0, 0, -0.00954, 1.0698, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  30% {\n    -webkit-transform: matrix3d(1.04151, -0.00794, 0, 0, -0.0053, 1.04151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.04151, -0.00794, 0, 0, -0.0053, 1.04151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  33.333333% {\n    -webkit-transform: matrix3d(1.01844, -0.00306, 0, 0, -0.00204, 1.01844, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.01844, -0.00306, 0, 0, -0.00204, 1.01844, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  36.666667% {\n    -webkit-transform: matrix3d(1.00277, -0.00038, 0, 0, -0.00025, 1.00277, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00277, -0.00038, 0, 0, -0.00025, 1.00277, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  40% {\n    -webkit-transform: matrix3d(0.99411, 0.00064, 0, 0, 0.00043, 0.99411, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99411, 0.00064, 0, 0, 0.00043, 0.99411, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  43.333333% {\n    -webkit-transform: matrix3d(0.99083, 0.00076, 0, 0, 0.0005, 0.99083, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99083, 0.00076, 0, 0, 0.0005, 0.99083, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  46.666667% {\n    -webkit-transform: matrix3d(0.991, 0.00053, 0, 0, 0.00035, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.991, 0.00053, 0, 0, 0.00035, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  50% {\n    -webkit-transform: matrix3d(0.99292, 0.00027, 0, 0, 0.00018, 0.99292, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99292, 0.00027, 0, 0, 0.00018, 0.99292, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  53.333333% {\n    -webkit-transform: matrix3d(0.99535, 0.00008, 0, 0, 0.00006, 0.99535, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99535, 0.00008, 0, 0, 0.00006, 0.99535, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  56.666667% {\n    -webkit-transform: matrix3d(0.99755, -0.00001, 0, 0, 0, 0.99755, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99755, -0.00001, 0, 0, 0, 0.99755, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  60% {\n    -webkit-transform: matrix3d(0.99919, -0.00004, 0, 0, -0.00002, 0.99919, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99919, -0.00004, 0, 0, -0.00002, 0.99919, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  63.333333% {\n    -webkit-transform: matrix3d(1.0002, -0.00003, 0, 0, -0.00002, 1.0002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.0002, -0.00003, 0, 0, -0.00002, 1.0002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  66.666667% {\n    -webkit-transform: matrix3d(1.00068, -0.00002, 0, 0, -0.00001, 1.00068, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00068, -0.00002, 0, 0, -0.00001, 1.00068, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  70% {\n    -webkit-transform: matrix3d(1.00079, -0.00001, 0, 0, -0.00001, 1.00079, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00079, -0.00001, 0, 0, -0.00001, 1.00079, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  73.333333% {\n    -webkit-transform: matrix3d(1.00069, 0, 0, 0, 0, 1.00069, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00069, 0, 0, 0, 0, 1.00069, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  76.666667% {\n    -webkit-transform: matrix3d(1.00049, 0, 0, 0, 0, 1.00049, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00049, 0, 0, 0, 0, 1.00049, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  80% {\n    -webkit-transform: matrix3d(1.00029, 0, 0, 0, 0, 1.00029, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00029, 0, 0, 0, 0, 1.00029, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  83.333333% {\n    -webkit-transform: matrix3d(1.00013, 0, 0, 0, 0, 1.00013, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00013, 0, 0, 0, 0, 1.00013, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  86.666667% {\n    -webkit-transform: matrix3d(1.00002, 0, 0, 0, 0, 1.00002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00002, 0, 0, 0, 0, 1.00002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  90% {\n    -webkit-transform: matrix3d(0.99996, 0, 0, 0, 0, 0.99996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99996, 0, 0, 0, 0, 0.99996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  93.333333% {\n    -webkit-transform: matrix3d(0.99994, 0, 0, 0, 0, 0.99994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99994, 0, 0, 0, 0, 0.99994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  96.666667% {\n    -webkit-transform: matrix3d(0.99994, 0, 0, 0, 0, 0.99994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99994, 0, 0, 0, 0, 0.99994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  100% {\n    height: 100%;\n    width: 100%;\n    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }\n\n@keyframes animation {\n  0% {\n    height: 0%;\n    width: 0%;\n    -webkit-transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  3.333333% {\n    height: 100%;\n    width: 100%;\n    -webkit-transform: matrix3d(0.34323, 0.11487, 0, 0, 0.07506, 0.34323, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.34323, 0.11487, 0, 0, 0.07506, 0.34323, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  6.666667% {\n    -webkit-transform: matrix3d(0.65416, 0.2159, 0, 0, 0.14115, 0.65416, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.65416, 0.2159, 0, 0, 0.14115, 0.65416, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  10% {\n    -webkit-transform: matrix3d(0.88518, 0.18431, 0, 0, 0.1219, 0.88518, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.88518, 0.18431, 0, 0, 0.1219, 0.88518, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  13.333333% {\n    -webkit-transform: matrix3d(1.02792, 0.0976, 0, 0, 0.06496, 1.02792, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.02792, 0.0976, 0, 0, 0.06496, 1.02792, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  16.666667% {\n    -webkit-transform: matrix3d(1.09602, 0.02621, 0, 0, 0.01747, 1.09602, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.09602, 0.02621, 0, 0, 0.01747, 1.09602, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  20% {\n    -webkit-transform: matrix3d(1.1117, -0.0094, 0, 0, -0.00627, 1.1117, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.1117, -0.0094, 0, 0, -0.00627, 1.1117, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  23.333333% {\n    -webkit-transform: matrix3d(1.09709, -0.01805, 0, 0, -0.01203, 1.09709, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.09709, -0.01805, 0, 0, -0.01203, 1.09709, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  26.666667% {\n    -webkit-transform: matrix3d(1.0698, -0.0143, 0, 0, -0.00954, 1.0698, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.0698, -0.0143, 0, 0, -0.00954, 1.0698, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  30% {\n    -webkit-transform: matrix3d(1.04151, -0.00794, 0, 0, -0.0053, 1.04151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.04151, -0.00794, 0, 0, -0.0053, 1.04151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  33.333333% {\n    -webkit-transform: matrix3d(1.01844, -0.00306, 0, 0, -0.00204, 1.01844, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.01844, -0.00306, 0, 0, -0.00204, 1.01844, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  36.666667% {\n    -webkit-transform: matrix3d(1.00277, -0.00038, 0, 0, -0.00025, 1.00277, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00277, -0.00038, 0, 0, -0.00025, 1.00277, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  40% {\n    -webkit-transform: matrix3d(0.99411, 0.00064, 0, 0, 0.00043, 0.99411, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99411, 0.00064, 0, 0, 0.00043, 0.99411, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  43.333333% {\n    -webkit-transform: matrix3d(0.99083, 0.00076, 0, 0, 0.0005, 0.99083, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99083, 0.00076, 0, 0, 0.0005, 0.99083, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  46.666667% {\n    -webkit-transform: matrix3d(0.991, 0.00053, 0, 0, 0.00035, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.991, 0.00053, 0, 0, 0.00035, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  50% {\n    -webkit-transform: matrix3d(0.99292, 0.00027, 0, 0, 0.00018, 0.99292, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99292, 0.00027, 0, 0, 0.00018, 0.99292, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  53.333333% {\n    -webkit-transform: matrix3d(0.99535, 0.00008, 0, 0, 0.00006, 0.99535, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99535, 0.00008, 0, 0, 0.00006, 0.99535, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  56.666667% {\n    -webkit-transform: matrix3d(0.99755, -0.00001, 0, 0, 0, 0.99755, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99755, -0.00001, 0, 0, 0, 0.99755, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  60% {\n    -webkit-transform: matrix3d(0.99919, -0.00004, 0, 0, -0.00002, 0.99919, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99919, -0.00004, 0, 0, -0.00002, 0.99919, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  63.333333% {\n    -webkit-transform: matrix3d(1.0002, -0.00003, 0, 0, -0.00002, 1.0002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.0002, -0.00003, 0, 0, -0.00002, 1.0002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  66.666667% {\n    -webkit-transform: matrix3d(1.00068, -0.00002, 0, 0, -0.00001, 1.00068, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00068, -0.00002, 0, 0, -0.00001, 1.00068, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  70% {\n    -webkit-transform: matrix3d(1.00079, -0.00001, 0, 0, -0.00001, 1.00079, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00079, -0.00001, 0, 0, -0.00001, 1.00079, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  73.333333% {\n    -webkit-transform: matrix3d(1.00069, 0, 0, 0, 0, 1.00069, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00069, 0, 0, 0, 0, 1.00069, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  76.666667% {\n    -webkit-transform: matrix3d(1.00049, 0, 0, 0, 0, 1.00049, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00049, 0, 0, 0, 0, 1.00049, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  80% {\n    -webkit-transform: matrix3d(1.00029, 0, 0, 0, 0, 1.00029, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00029, 0, 0, 0, 0, 1.00029, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  83.333333% {\n    -webkit-transform: matrix3d(1.00013, 0, 0, 0, 0, 1.00013, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00013, 0, 0, 0, 0, 1.00013, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  86.666667% {\n    -webkit-transform: matrix3d(1.00002, 0, 0, 0, 0, 1.00002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1.00002, 0, 0, 0, 0, 1.00002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  90% {\n    -webkit-transform: matrix3d(0.99996, 0, 0, 0, 0, 0.99996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99996, 0, 0, 0, 0, 0.99996, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  93.333333% {\n    -webkit-transform: matrix3d(0.99994, 0, 0, 0, 0, 0.99994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99994, 0, 0, 0, 0, 0.99994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  96.666667% {\n    -webkit-transform: matrix3d(0.99994, 0, 0, 0, 0, 0.99994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(0.99994, 0, 0, 0, 0, 0.99994, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }\n  100% {\n    height: 100%;\n    width: 100%;\n    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }\n\n.header {\n  height: 450px;\n  background-image: url(" + __webpack_require__(/*! ../assets/header.png */ 179) + ");\n  background-size: cover;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  position: relative; }\n  .header .logo {\n    float: left;\n    margin: 10px 0 0 30px;\n    border: white solid 1px;\n    border-radius: 100%;\n    opacity: 0.8;\n    height: 100px;\n    width: 100px; }\n  .header nav {\n    float: right;\n    margin: 30px 30px 0px 0px; }\n    .header nav a {\n      display: inline-block;\n      margin-left: 20px;\n      color: white;\n      text-decoration: none; }\n      .header nav a:before {\n        content: '';\n        display: block;\n        margin: auto;\n        height: 1px;\n        width: 0px;\n        background: transparent;\n        transition: width .5s ease, background-color .5s ease; }\n      .header nav a:hover:before {\n        width: 100%;\n        background: white; }\n  .header .intro {\n    position: relative;\n    width: 100%;\n    top: 15%;\n    margin-top: -60px;\n    display: inline-block; }\n    .header .intro h1 {\n      font-size: 72px;\n      font-weight: 700;\n      text-transform: uppercase;\n      color: white;\n      letter-spacing: 0.05em;\n      text-align: center;\n      clear: both; }\n      .header .intro h1 span {\n        border: white solid 10px;\n        display: inline-block;\n        padding: 0.2em 0.5em; }\n    .header .intro .subtitle {\n      text-align: center;\n      color: white;\n      letter-spacing: 0.3em;\n      line-height: 1; }\n\n.footer {\n  background: url(" + __webpack_require__(/*! ../assets/header.png */ 179) + ") center center;\n  background-size: cover; }\n  .footer::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n  .footer .lockup {\n    padding: 50px 30px; }\n    .footer .lockup .logo {\n      height: 50px;\n      width: 50px;\n      border-radius: 100%;\n      float: left;\n      margin-right: 30px;\n      margin-bottom: 20px;\n      opacity: 0.5; }\n    .footer .lockup .content-wraper {\n      float: left;\n      padding-top: 5px; }\n      .footer .lockup .content-wraper .copyright {\n        margin: 0;\n        color: #ccc; }\n      .footer .lockup .content-wraper a {\n        text-decoration: none;\n        color: white;\n        margin-right: 20px; }\n        .footer .lockup .content-wraper a:hover {\n          opacity: 0.8; }\n\n.about {\n  text-align: center; }\n\n.face-lockup {\n  max-width: 780px;\n  display: -webkit-box;\n  display: -moz-box;\n  display: box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 0 auto;\n  -webkit-box-align: center;\n  -moz-box-align: center;\n  box-align: center;\n  -webkit-align-items: center;\n  -moz-align-items: center;\n  -ms-align-items: center;\n  -o-align-items: center;\n  align-items: center;\n  -ms-flex-align: center;\n  -webkit-box-pack: justify;\n  -moz-box-pack: justify;\n  box-pack: justify;\n  -webkit-justify-content: space-between;\n  -moz-justify-content: space-between;\n  -ms-justify-content: space-between;\n  -o-justify-content: space-between;\n  justify-content: space-between;\n  -ms-flex-pack: justify; }\n  .face-lockup .face-img {\n    height: 200px;\n    width: 200px;\n    background: url(" + __webpack_require__(/*! ../assets/face.jpg */ 180) + ") center center;\n    background-size: cover;\n    opacity: 0.8;\n    border-radius: 50%;\n    -webkit-box-ordinal-group: 3;\n    -moz-box-ordinal-group: 3;\n    box-ordinal-group: 3;\n    -webkit-order: 3;\n    -moz-order: 3;\n    order: 3;\n    -ms-flex-order: 3; }\n  .face-lockup [class^='icon-'] {\n    height: 100px;\n    width: 100px;\n    border-radius: 50%;\n    background: #e5eaee; }\n    .face-lockup [class^='icon-'].icon-pencil {\n      -webkit-box-ordinal-group: 1;\n      -moz-box-ordinal-group: 1;\n      box-ordinal-group: 1;\n      -webkit-order: 1;\n      -moz-order: 1;\n      order: 1;\n      -ms-flex-order: 1; }\n    .face-lockup [class^='icon-'].icon-mouse {\n      -webkit-box-ordinal-group: 4;\n      -moz-box-ordinal-group: 4;\n      box-ordinal-group: 4;\n      -webkit-order: 4;\n      -moz-order: 4;\n      order: 4;\n      -ms-flex-order: 4; }\n    .face-lockup [class^='icon-'].icon-browser {\n      -webkit-box-ordinal-group: 2;\n      -moz-box-ordinal-group: 2;\n      box-ordinal-group: 2;\n      -webkit-order: 2;\n      -moz-order: 2;\n      order: 2;\n      -ms-flex-order: 2; }\n    .face-lockup [class^='icon-'].icon-video {\n      -webkit-box-ordinal-group: 5;\n      -moz-box-ordinal-group: 5;\n      box-ordinal-group: 5;\n      -webkit-order: 5;\n      -moz-order: 5;\n      order: 5;\n      -ms-flex-order: 5; }\n    .face-lockup [class^='icon-'] i {\n      font-size: 50px;\n      line-height: 100px;\n      color: #1f9fd7; }\n\nh3 {\n  color: #1f9fd7;\n  display: inline-block;\n  padding: 100px 0 30px 0; }\n\n.blurb {\n  padding: 0 15px;\n  max-width: 620px;\n  margin: 50px auto;\n  font-size: 24px;\n  font-weight: 300; }\n  .blurb a {\n    text-decoration: none;\n    font-weight: 500;\n    color: #1f9fd7; }\n    .blurb a:hover {\n      cursor: pointer;\n      opacity: 0.5; }\n\n@media screen and (max-width: 640px) {\n  .face-lockup {\n    display: block; }\n    .face-lockup .face-img {\n      margin: 0 auto;\n      margin-bottom: 30px; }\n    .face-lockup [class^='icon-'] {\n      display: inline-block;\n      margin: 10px; } }\n\n.skill-lockup {\n  max-width: 700px;\n  margin: 50px auto;\n  color: #999; }\n  .skill-lockup::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n  .skill-lockup .skill-unit {\n    width: 350px;\n    float: left; }\n    .skill-lockup .skill-unit .skill-label {\n      width: 250px;\n      text-align: left;\n      margin-left: 65px; }\n    .skill-lockup .skill-unit .skill-icons {\n      font-size: 0;\n      margin: 0px 0 30px; }\n      .skill-lockup .skill-unit .skill-icons span {\n        display: inline-block;\n        height: 14px;\n        width: 14px;\n        background: #1f9fd7;\n        margin-right: 8px;\n        border-radius: 50%; }\n        .skill-lockup .skill-unit .skill-icons span:after {\n          content: '';\n          display: block;\n          height: 10px;\n          width: 10px;\n          border-radius: 50%;\n          background: #fff;\n          margin: 2px; }\n\n@media screen and (max-width: 700px) {\n  .skill-lockup {\n    width: 350px; } }\n\n.skill-lockup .skill-unit .skill-icons.skill-1 span:nth-child(n+2), .skill-lockup .skill-unit .skill-icons.skill-2 span:nth-child(n+3), .skill-lockup .skill-unit .skill-icons.skill-3 span:nth-child(n+4), .skill-lockup .skill-unit .skill-icons.skill-4 span:nth-child(n+5), .skill-lockup .skill-unit .skill-icons.skill-5 span:nth-child(n+6), .skill-lockup .skill-unit .skill-icons.skill-6 span:nth-child(n+7), .skill-lockup .skill-unit .skill-icons.skill-7 span:nth-child(n+8), .skill-lockup .skill-unit .skill-icons.skill-8 span:nth-child(n+9), .skill-lockup .skill-unit .skill-icons.skill-9 span:nth-child(n+10), .skill-lockup .skill-unit .skill-icons.skill-10 span:nth-child(n+11) {\n  background: #e5eaee; }\n\n.work-lockup {\n  background-color: #e5eaee;\n  text-align: center;\n  overflow-x: hidden; }\n\n.work-belt {\n  width: 200%;\n  position: relative;\n  left: 0%;\n  -webkit-transition: all 800ms;\n  -moz-transition: all 800ms;\n  transition: all 800ms; }\n\n.work-wrap {\n  text-align: left; }\n\n.thumb-wrap, .work-wrap {\n  width: 50%;\n  float: left; }\n\n.thumb-container {\n  max-width: 960px;\n  margin: 0 auto;\n  padding-bottom: 100px; }\n  .thumb-container::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n  .thumb-container .thumb-unit {\n    display: block;\n    width: 33.33333%;\n    background-color: #fff;\n    float: left;\n    padding-top: 30%;\n    position: relative;\n    overflow: hidden;\n    background-image: url(" + __webpack_require__(/*! ../assets/header.png */ 179) + ");\n    background-size: cover;\n    background-position: center center;\n    background-repeat: no-repeat;\n    -webkit-perspective: 300;\n    -moz-perspective: 300;\n    perspective: 300; }\n    @media screen and (max-width: 530px) {\n      .thumb-container .thumb-unit {\n        width: 50%;\n        padding-top: 55%; } }\n    .thumb-container .thumb-unit .thumb-overlay {\n      position: absolute;\n      top: -50%;\n      right: 0px;\n      left: 0px;\n      height: 100%;\n      background: rgba(31, 159, 215, 0.9);\n      -webkit-transition: 500ms;\n      -moz-transition: 500ms;\n      transition: 500ms;\n      text-align: center;\n      opacity: 0;\n      -webkit-transform: rotateX(90deg);\n      -moz-transform: rotateX(90deg);\n      -ms-transform: rotateX(90deg);\n      -o-transform: rotateX(90deg);\n      transform: rotateX(90deg);\n      -webkit-transform-origin: center bottom;\n      -moz-transform-origin: center bottom;\n      -ms-transform-origin: center bottom;\n      -o-transform-origin: center bottom;\n      transform-origin: center bottom; }\n      .thumb-container .thumb-unit .thumb-overlay strong {\n        display: block;\n        padding: 0px 10px;\n        padding-top: 30%;\n        color: white;\n        font-weight: 300;\n        text-transform: uppercase;\n        font-size: 24px;\n        line-height: 1.2; }\n      .thumb-container .thumb-unit .thumb-overlay .zoom-icon {\n        position: relative;\n        opacity: 0.8; }\n        .thumb-container .thumb-unit .thumb-overlay .zoom-icon:hover {\n          opacity: 1;\n          cursor: pointer; }\n        .thumb-container .thumb-unit .thumb-overlay .zoom-icon .ion-ios-search {\n          color: white;\n          font-size: 60px;\n          position: absolute;\n          top: 0px;\n          right: 0px;\n          bottom: 0px;\n          left: 0px; }\n        .thumb-container .thumb-unit .thumb-overlay .zoom-icon .ion-ios-plus-empty {\n          color: white;\n          font-size: 45px;\n          position: absolute;\n          top: 5px;\n          right: 9px;\n          bottom: 0px;\n          left: 0px; }\n    .thumb-container .thumb-unit:hover .thumb-overlay {\n      top: 0%;\n      -webkit-transform: rotateX(0deg);\n      -moz-transform: rotateX(0deg);\n      -ms-transform: rotateX(0deg);\n      -o-transform: rotateX(0deg);\n      transform: rotateX(0deg);\n      opacity: 1; }\n\n.work-container {\n  max-width: 600px;\n  margin: 0 auto;\n  position: relative;\n  display: none; }\n  .work-container .work-return {\n    height: 70px;\n    width: 70px;\n    cursor: pointer;\n    opacity: 0.5;\n    position: absolute;\n    top: -20px;\n    left: -60px; }\n    .work-container .work-return:hover {\n      opacity: 0.8; }\n    .work-container .work-return i {\n      font-size: 50px; }\n  .work-container h4 {\n    color: #1f9fd7;\n    font-weight: 300;\n    text-transform: uppercase;\n    font-size: 24px;\n    line-height: 1.2;\n    margin: 0 0 20px; }\n  .work-container img {\n    width: 100%;\n    margin-bottom: 20px; }\n\n@media screen and (max-width: 730px) {\n  .work-container .work-return {\n    left: 0; }\n  .work-container h4 {\n    margin-left: 50px; } }\n\n.ref-lockup {\n  text-align: center;\n  position: relative; }\n\n.ref-belt {\n  width: 100%; }\n  .ref-belt .ref-unit {\n    max-width: 750px;\n    margin: 230px 0 0px -375px;\n    position: absolute;\n    top: 0px;\n    left: 50%;\n    z-index: 1;\n    display: none; }\n    .ref-belt .ref-unit.active-ref {\n      display: -webkit-box;\n      display: -moz-box;\n      display: box;\n      display: -webkit-flex;\n      display: -moz-flex;\n      display: -ms-flexbox;\n      display: flex; }\n    .ref-belt .ref-unit .ref-face {\n      min-width: 300px;\n      text-align: center; }\n      .ref-belt .ref-unit .ref-face img {\n        max-width: 100px;\n        border-radius: 50%; }\n      .ref-belt .ref-unit .ref-face a {\n        display: block; }\n        .ref-belt .ref-unit .ref-face a i {\n          font-size: 30px; }\n      .ref-belt .ref-unit .ref-face .ref-name {\n        display: block;\n        text-transform: uppercase;\n        font-weight: 400;\n        letter-spacing: 1px;\n        color: #999; }\n      .ref-belt .ref-unit .ref-face .ref-title {\n        font-style: normal;\n        font-size: 12px;\n        color: #999; }\n    .ref-belt .ref-unit .ref-content {\n      text-align: left;\n      font-size: 18px;\n      line-height: 36px;\n      font-weight: 300;\n      margin-top: -10px;\n      position: relative; }\n      .ref-belt .ref-unit .ref-content .end {\n        top: 42%;\n        z-index: -1;\n        -webkit-transform: rotate(90deg);\n        -moz-transform: rotate(90deg);\n        -ms-transform: rotate(90deg);\n        -o-transform: rotate(90deg);\n        transform: rotate(90deg);\n        position: absolute;\n        left: 90%; }\n      .ref-belt .ref-unit .ref-content .ion-quote {\n        font-size: 70px;\n        color: #1f9fd7;\n        opacity: 0.3; }\n        .ref-belt .ref-unit .ref-content .ion-quote.begin {\n          position: absolute;\n          top: -10%;\n          left: -3%;\n          z-index: -1; }\n\n.ref-logos {\n  position: relative;\n  max-width: 750px;\n  margin: 430px auto 100px;\n  display: -webkit-box;\n  display: -moz-box;\n  display: box;\n  display: -webkit-flex;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: space-around;\n  -moz-box-align: space-around;\n  box-align: space-around;\n  -webkit-align-items: space-around;\n  -moz-align-items: space-around;\n  -ms-align-items: space-around;\n  -o-align-items: space-around;\n  align-items: space-around;\n  -ms-flex-align: space-around;\n  -webkit-box-pack: center;\n  -moz-box-pack: center;\n  box-pack: center;\n  -webkit-justify-content: center;\n  -moz-justify-content: center;\n  -ms-justify-content: center;\n  -o-justify-content: center;\n  justify-content: center;\n  -ms-flex-pack: center; }\n  .ref-logos .ref-logo {\n    height: 80px;\n    min-width: 280px;\n    background-size: contain;\n    background-position: center center;\n    background-repeat: no-repeat;\n    z-index: 5;\n    cursor: pointer;\n    margin: 0 10px; }\n    .ref-logos .ref-logo.active-ref {\n      box-shadow: 0px 15px 0px #fff, 0px 20px 0px #1f9fd7; }\n\n.ref-controls {\n  position: absolute;\n  width: 100%;\n  top: 40%; }\n  .ref-controls::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n  .ref-controls .ion-chevron-left, .ref-controls .ion-chevron-right {\n    font-size: 50px;\n    opacity: 0.3;\n    color: #1f9fd7; }\n  .ref-controls .ion-chevron-left {\n    float: left; }\n  .ref-controls .ion-chevron-right {\n    float: right; }\n\n.cont {\n  height: 600px;\n  width: 600px;\n  border: black solid 1px;\n  text-align: center; }\n  .cont .dropdown {\n    display: inline-block; }\n    .cont .dropdown > ul {\n      list-style: none;\n      display: inline-block; }\n      .cont .dropdown > ul > li {\n        float: left;\n        position: relative;\n        width: 50px; }\n\n.sublist {\n  position: absolute;\n  top: 100%;\n  left: 0%;\n  width: 100%;\n  padding: 0; }\n\nul.sublist li {\n  display: none; }\n\nli:hover > .sublist li {\n  display: block;\n  background: black;\n  margin: 5px; }\n\nli:hover > .sublist {\n  perspective: 1000px; }\n  li:hover > .sublist li {\n    opacity: 0; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: -150ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: 0ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: 150ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n    li:hover > .sublist li .sublist:nth-child(i) {\n      animation-name: menu;\n      animation-duration: 300ms;\n      animation-delay: 300ms;\n      animation-timing-function: ease-in-out;\n      animation-fill-mode: forwards; }\n\n@keyframes menu {\n  0% {\n    opacity: 0;\n    transform: rotateY(-90deg) translateY(30px); }\n  100% {\n    opacity: 1;\n    transform: rotateY(0deg) translateY(0px); } }\n", ""]);
 	
 	// exports
 
@@ -22190,26 +22190,6 @@
 
 /***/ },
 /* 181 */
-/*!*****************************************!*\
-  !*** ./client/assets/ref_logo/kpmg.png ***!
-  \*****************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	module.exports = __webpack_require__.p + "7e233d79f7d8b83a3d5e997263ce7ea2.png";
-	;
-
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	}();
-
-	;
-
-/***/ },
-/* 182 */
 /*!*************************************!*\
   !*** ./~/style-loader/addStyles.js ***!
   \*************************************/
@@ -22464,7 +22444,7 @@
 
 
 /***/ },
-/* 183 */
+/* 182 */
 /*!***********************************!*\
   !*** ./client/components/main.js ***!
   \***********************************/
@@ -22482,27 +22462,27 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(/*! jquery */ 184);
+	var _jquery = __webpack_require__(/*! jquery */ 183);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
-	var _header = __webpack_require__(/*! ./header */ 185);
+	var _header = __webpack_require__(/*! ./header */ 184);
 	
 	var _header2 = _interopRequireDefault(_header);
 	
-	var _footer = __webpack_require__(/*! ./footer */ 186);
+	var _footer = __webpack_require__(/*! ./footer */ 185);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	var _about = __webpack_require__(/*! ./about */ 187);
+	var _about = __webpack_require__(/*! ./about */ 186);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _work = __webpack_require__(/*! ./work */ 189);
+	var _work = __webpack_require__(/*! ./work */ 188);
 	
 	var _work2 = _interopRequireDefault(_work);
 	
-	var _reference = __webpack_require__(/*! ./reference */ 192);
+	var _reference = __webpack_require__(/*! ./reference */ 191);
 	
 	var _reference2 = _interopRequireDefault(_reference);
 	
@@ -22578,7 +22558,7 @@
 	;
 
 /***/ },
-/* 184 */
+/* 183 */
 /*!*********************************!*\
   !*** ./~/jquery/dist/jquery.js ***!
   \*********************************/
@@ -32807,7 +32787,7 @@
 
 
 /***/ },
-/* 185 */
+/* 184 */
 /*!*************************************!*\
   !*** ./client/components/header.js ***!
   \*************************************/
@@ -32825,7 +32805,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(/*! jquery */ 184);
+	var _jquery = __webpack_require__(/*! jquery */ 183);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -32934,7 +32914,7 @@
 	;
 
 /***/ },
-/* 186 */
+/* 185 */
 /*!*************************************!*\
   !*** ./client/components/footer.js ***!
   \*************************************/
@@ -33038,7 +33018,7 @@
 	;
 
 /***/ },
-/* 187 */
+/* 186 */
 /*!************************************!*\
   !*** ./client/components/about.js ***!
   \************************************/
@@ -33056,7 +33036,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _skillSet = __webpack_require__(/*! ./skillSet */ 188);
+	var _skillSet = __webpack_require__(/*! ./skillSet */ 187);
 	
 	var _skillSet2 = _interopRequireDefault(_skillSet);
 	
@@ -33165,7 +33145,7 @@
 	;
 
 /***/ },
-/* 188 */
+/* 187 */
 /*!***************************************!*\
   !*** ./client/components/skillSet.js ***!
   \***************************************/
@@ -33286,7 +33266,7 @@
 	;
 
 /***/ },
-/* 189 */
+/* 188 */
 /*!***********************************!*\
   !*** ./client/components/work.js ***!
   \***********************************/
@@ -33304,15 +33284,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(/*! jquery */ 184);
+	var _jquery = __webpack_require__(/*! jquery */ 183);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
-	var _workDetails = __webpack_require__(/*! ./workDetails */ 190);
+	var _workDetails = __webpack_require__(/*! ./workDetails */ 189);
 	
 	var _workDetails2 = _interopRequireDefault(_workDetails);
 	
-	var _projects = __webpack_require__(/*! ../data/projects */ 191);
+	var _projects = __webpack_require__(/*! ../data/projects */ 190);
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
@@ -33433,7 +33413,7 @@
 	;
 
 /***/ },
-/* 190 */
+/* 189 */
 /*!******************************************!*\
   !*** ./client/components/workDetails.js ***!
   \******************************************/
@@ -33451,7 +33431,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(/*! jquery */ 184);
+	var _jquery = __webpack_require__(/*! jquery */ 183);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -33550,7 +33530,7 @@
 	;
 
 /***/ },
-/* 191 */
+/* 190 */
 /*!*********************************!*\
   !*** ./client/data/projects.js ***!
   \*********************************/
@@ -33614,7 +33594,7 @@
 	;
 
 /***/ },
-/* 192 */
+/* 191 */
 /*!****************************************!*\
   !*** ./client/components/reference.js ***!
   \****************************************/
@@ -33632,11 +33612,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(/*! jquery */ 184);
+	var _jquery = __webpack_require__(/*! jquery */ 183);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
-	var _ref = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../data/ref\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _ref = __webpack_require__(/*! ../data/ref */ 192);
 	
 	var _ref2 = _interopRequireDefault(_ref);
 	
@@ -33654,7 +33634,13 @@
 	  function Reference() {
 	    _classCallCheck(this, Reference);
 	
-	    return _possibleConstructorReturn(this, (Reference.__proto__ || Object.getPrototypeOf(Reference)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Reference.__proto__ || Object.getPrototypeOf(Reference)).call(this));
+	
+	    _this.state = {
+	      currentRef: 'Beto'
+	    };
+	
+	    return _this;
 	  }
 	
 	  _createClass(Reference, [{
@@ -33671,9 +33657,10 @@
 	        var img = _refList$ref.img;
 	        var linkedIn = _refList$ref.linkedIn;
 	
+	        var isActive = this.state.currentRef === ref ? 'active-ref' : '';
 	        refViews.push(_react2.default.createElement(
 	          'div',
-	          { className: 'ref-unit' },
+	          { className: 'ref-unit ' + isActive },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'ref-face' },
@@ -33701,7 +33688,11 @@
 	            'div',
 	            { className: 'ref-content' },
 	            _react2.default.createElement('i', { className: 'ion-quote begin' }),
-	            content,
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              content
+	            ),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'end' },
@@ -33711,11 +33702,69 @@
 	        ));
 	      }
 	
-	      return skillsViews;
+	      return refViews;
+	    }
+	  }, {
+	    key: 'handleRef',
+	    value: function handleRef(ref) {
+	      this.setState({ currentRef: ref });
+	    }
+	  }, {
+	    key: 'handleNext',
+	    value: function handleNext() {
+	      var refName = Object.keys(_ref2.default);
+	      var curName = this.state.currentRef;
+	      var curNamePos = refName.indexOf(curName);
+	      var nextName = refName[curNamePos + 1];
+	      if (nextName) {
+	        this.setState({ currentRef: nextName });
+	      } else {
+	        this.setState({ currentRef: refName[0] });
+	      }
+	    }
+	  }, {
+	    key: 'handlePrev',
+	    value: function handlePrev() {
+	      var refName = Object.keys(_ref2.default);
+	      var refLength = Object.keys(_ref2.default).length;
+	      var curName = this.state.currentRef;
+	      var curNamePos = refName.indexOf(curName);
+	      var prevName = refName[curNamePos - 1];
+	      if (prevName) {
+	        this.setState({ currentRef: prevName });
+	      } else {
+	        this.setState({ currentRef: refName[refLength - 1] });
+	      }
+	    }
+	  }, {
+	    key: 'refLogo',
+	    value: function refLogo() {
+	      var _this2 = this;
+	
+	      var refLogoViews = [];
+	
+	      var _loop = function _loop(ref) {
+	        var logo = _ref2.default[ref].logo;
+	
+	        var isActive = _this2.state.currentRef === ref ? 'active-ref' : '';
+	        refLogoViews.push(_react2.default.createElement(
+	          'div',
+	          { onClick: function onClick() {
+	              _this2.handleRef(ref);
+	            }, className: 'ref-logo ' + isActive, style: { backgroundImage: 'url(' + logo + ')' } },
+	          ' '
+	        ));
+	      };
+	
+	      for (var ref in _ref2.default) {
+	        _loop(ref);
+	      }
+	      return refLogoViews;
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this3 = this;
 	
 	      return _react2.default.createElement(
 	        'div',
@@ -33728,8 +33777,12 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'ref-controls' },
-	          _react2.default.createElement('i', { className: 'ion-chevron-left' }),
-	          _react2.default.createElement('i', { className: 'ion-chevron-right' })
+	          _react2.default.createElement('i', { className: 'ion-chevron-left', onClick: function onClick() {
+	              _this3.handlePrev();
+	            } }),
+	          _react2.default.createElement('i', { className: 'ion-chevron-right', onClick: function onClick() {
+	              _this3.handleNext();
+	            } })
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -33738,21 +33791,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'ref-logos' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'ref-logo active-ref' },
-	              ' '
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'ref-logo' },
-	              ' '
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'ref-logo' },
-	              ' '
-	            )
+	            this.refLogo()
 	          )
 	        )
 	      );
@@ -33779,18 +33818,68 @@
 	;
 
 /***/ },
-/* 193 */,
-/* 194 */
+/* 192 */
+/*!****************************!*\
+  !*** ./client/data/ref.js ***!
+  \****************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var _default = {
+	  'Beto': {
+	    name: 'Beto Juárez III',
+	    title: 'Product Manager, Gigster',
+	    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec',
+	    img: '../assets/ref_face/beto.jpg',
+	    linkedIn: 'https://www.linkedin.com/in/betojuareziii',
+	    logo: "../assets/ref_logo/gigster.svg"
+	  },
+	  'Ricky': {
+	    name: 'Ricky Walker',
+	    title: 'Instructor, Hack Reactor',
+	    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec',
+	    img: '../assets/ref_face/ricky.jpg',
+	    linkedIn: 'https://www.linkedin.com/in/walkerricky',
+	    logo: "../assets/ref_logo/hack.png"
+	  },
+	  'Reda': {
+	    name: 'Reda El Badouri',
+	    title: 'Supervisor, KPMG',
+	    content: 'I worked with Nizar Ayari directly on several audit assignments. His attention to detail was always focused, professional, and well disciplined as a key financial auditor team member. Nizar was always willing to increase responsibilities, creating insightful and detailed audit and financial reports. He quickly contributed, and some of Nizar’s strengths include working directly with the client’s Accounting, Controlling and several departments.',
+	    img: '../assets/ref_face/reda.jpg',
+	    linkedIn: 'https://fr.linkedin.com/in/réda-el-badouri-71664290/en',
+	    logo: "../assets/ref_logo/kpmg.svg"
+	  }
+	};
+	exports.default = _default;
+	;
+
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/nizarayari/Desktop/PersonalWebsite/client/data/ref.js');
+	}();
+
+	;
+
+/***/ },
+/* 193 */
 /*!*************************************!*\
   !*** ./~/react-hot-loader/index.js ***!
   \*************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(/*! ./lib/index */ 195);
+	module.exports = __webpack_require__(/*! ./lib/index */ 194);
 
 
 /***/ },
-/* 195 */
+/* 194 */
 /*!*****************************************!*\
   !*** ./~/react-hot-loader/lib/index.js ***!
   \*****************************************/
@@ -33798,7 +33887,7 @@
 
 	'use strict';
 	
-	var AppContainer = __webpack_require__(/*! ./AppContainer */ 196);
+	var AppContainer = __webpack_require__(/*! ./AppContainer */ 195);
 	
 	module.exports = function warnAboutIncorrectUsage(arg) {
 	  if (this && this.callback) {
@@ -33813,7 +33902,7 @@
 	module.exports.AppContainer = AppContainer;
 
 /***/ },
-/* 196 */
+/* 195 */
 /*!************************************************!*\
   !*** ./~/react-hot-loader/lib/AppContainer.js ***!
   \************************************************/
@@ -33824,13 +33913,13 @@
 	'use strict';
 	
 	if (true) {
-	  module.exports = __webpack_require__(/*! ./AppContainer.prod */ 197);
+	  module.exports = __webpack_require__(/*! ./AppContainer.prod */ 196);
 	} else {
 	  module.exports = require('./AppContainer.dev');
 	}
 
 /***/ },
-/* 197 */
+/* 196 */
 /*!*****************************************************!*\
   !*** ./~/react-hot-loader/lib/AppContainer.prod.js ***!
   \*****************************************************/

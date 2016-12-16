@@ -1,21 +1,24 @@
 .ref-lockup {
-  text-align: center;
   position: relative;
+  text-align:center;
 }
 
 .ref-belt {
   width:100%;
+  position: relative;
 
   .ref-unit {
     max-width: 750px;
-    margin: 230px 0 0px -375px;
-    @include position(absolute, 0px null null 50%)
+    margin: 50px auto;
+    height: 300px;
+    position:relative;
     z-index: 1;
     display:none;
 
+
     &.active-ref{
       @include display(flex);
-      @extend %bounceOut;
+      //@extend %bounceOut;
     }
 
     .ref-face {
@@ -52,7 +55,6 @@
     }
 
     .ref-content {
-      text-align:left;
       font-size:18px;
       line-height: 36px;
       font-weight: 300;
@@ -60,10 +62,9 @@
       position:relative;
       
       .end {
-        top:42%;
         z-index:-1;
         @include transform(rotate(90deg));
-        @include position(absolute, null null null 90%);
+        @include position(absolute, 80% null null 90%);
 
       }
 
@@ -85,25 +86,24 @@
 .ref-logos {
   position: relative;
   max-width: 750px;
-  margin: 430px auto 100px;
+  margin: 0px auto 100px;
   @include display(flex);
-  @include align-items(space-around);
-  @include justify-content(center);
+  @include align-items(flex-end);
+  @include justify-content(space-around);
 
   .ref-logo{
+    max-width: 150px;
     height: 80px;
-    min-width: 280px;
-    background: {
-      size : contain;
-      position: center center;
-      repeat: no-repeat;
-    }
     z-index: 5;
-    cursor:pointer;
-    margin:0 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-bottom : 4px solid transparent;
+    opacity: 0.5;
+    padding-bottom: 10px;
 
     &.active-ref {
-      box-shadow: 0px 15px 0px #fff, 0px 20px 0px $accent;
+      border-bottom: 4px solid $accent;
+      opacity:1;
     }
 
 
@@ -115,18 +115,75 @@
   position:absolute;
   width:100%;
   top:40%;
+  z-index: 5;
   .ion-chevron-left, .ion-chevron-right {
     font-size:50px;
     opacity: 0.3;
     color:$accent;
+    cursor:pointer;
   }
   
   .ion-chevron-left{
-    float:left;
+    @include position(absolute, 50% null null 30px)
   }
 
   .ion-chevron-right{
-    float:right;
+    @include position(absolute, 50% 30px null null)
+  }
+
+}
+
+// ref Mobile
+
+.ref-mobile-nav {
+  text-align: center;
+  cursor:pointer;
+  display: none;
+  span {
+    display:inline-block;
+    @include size(16px);
+    border-radius:50%;
+    border: 2px solid $bgcolor;
+    margin: 0px 10px;
+
+    &.active-ref {
+      border-color:$accent;
+    }
+  }
+}
+
+@media screen and (max-width:800px){
+  .ref-controls{
+    display:none;
+  }
+  
+  .ref-belt {
+
+    .ref-unit.active-ref {
+      display:block;
+      position:relative;
+      margin-left:0px;
+      left:auto;
+      height:600px;
+      
+      .ref-face{
+        margin-bottom: 20px;
+      }
+
+      .ref-content {
+        padding:0 30px;
+        max-width: 400px;
+        margin: 0px auto;
+      }
+    }
+  }
+
+  .ref-mobile-nav {
+    display: block;
+  }
+
+  .ref-logos {
+    display:none;
   }
 
 }
