@@ -6,6 +6,7 @@ import Header from "./header";
 import Footer from "./footer";
 import About from "./about";
 import Work from "./work";
+import Reference from "./reference";
 
 export default class App extends React.Component {
 
@@ -15,12 +16,10 @@ componentDidMount(){
 }
 
 smoothScroll(duration){
-  console.log(duration,'duration')
   $('a[href^="#"]').on('click', function(event){
     
     const target = $( $(this).attr('href') );
 
-    console.log(target,'target')
     if(target.length){
       event.preventDefault();
       $('html, body').animate({
@@ -37,6 +36,7 @@ smoothScroll(duration){
         <Header/>
         <About/>
         <Work/>
+        <Reference/>
         <Footer/>
       </div>
     );

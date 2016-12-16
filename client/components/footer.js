@@ -16,7 +16,7 @@ export default class Footer extends Component {
             <nav>
               <a href='#about-me'> About Me </a>
               <a href='#me'> Work </a>
-              <a href='#articles'> Articles </a>
+              <a href='#ref'> References </a>
               <a href='#contact'> Contact </a>
             </nav>
 

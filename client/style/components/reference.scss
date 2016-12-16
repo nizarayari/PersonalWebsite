@@ -1,0 +1,134 @@
+.ref-lockup {
+  text-align: center;
+  position: relative;
+}
+
+.ref-belt {
+  width:100%;
+
+  .ref-unit {
+    max-width: 750px;
+    margin: 230px 0 0px -375px;
+    @include position(absolute, 0px null null 50%)
+    z-index: 1;
+    display:none;
+
+    &.active-ref{
+      @include display(flex);
+      @extend %bounceOut;
+    }
+
+    .ref-face {
+      min-width: 300px;
+      text-align:center;
+
+      
+      img {
+        max-width: 100px;
+        border-radius:50%;
+      }
+
+      a {
+        display:block;
+        i {
+          font-size: 30px;
+        }
+      }
+
+      .ref-name {
+        display:block;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color:#999;
+      }
+  
+      .ref-title {
+        font-style: normal;
+        font-size: 12px;
+        color:#999;
+      }
+
+    }
+
+    .ref-content {
+      text-align:left;
+      font-size:18px;
+      line-height: 36px;
+      font-weight: 300;
+      margin-top:-10px;
+      position:relative;
+      
+      .end {
+        top:42%;
+        z-index:-1;
+        @include transform(rotate(90deg));
+        @include position(absolute, null null null 90%);
+
+      }
+
+      .ion-quote {
+        font-size: 70px;
+        color : $accent;
+        opacity: 0.3  ;
+        &.begin {
+          @include position(absolute, -10% null  null -3%);
+          z-index:-1;
+        }
+      }
+
+    }
+
+  }
+}
+
+.ref-logos {
+  position: relative;
+  max-width: 750px;
+  margin: 430px auto 100px;
+  @include display(flex);
+  @include align-items(space-around);
+  @include justify-content(center);
+
+  .ref-logo{
+    height: 80px;
+    min-width: 280px;
+    background: {
+      size : contain;
+      position: center center;
+      repeat: no-repeat;
+    }
+    z-index: 5;
+    cursor:pointer;
+    margin:0 10px;
+
+    &.active-ref {
+      box-shadow: 0px 15px 0px #fff, 0px 20px 0px $accent;
+    }
+
+
+  }
+}
+
+.ref-controls{
+  @include clearfix;
+  position:absolute;
+  width:100%;
+  top:40%;
+  .ion-chevron-left, .ion-chevron-right {
+    font-size:50px;
+    opacity: 0.3;
+    color:$accent;
+  }
+  
+  .ion-chevron-left{
+    float:left;
+  }
+
+  .ion-chevron-right{
+    float:right;
+  }
+
+}
+
+
