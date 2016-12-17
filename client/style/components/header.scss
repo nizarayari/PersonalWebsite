@@ -1,6 +1,5 @@
 
 .header {
-  height: 450px;
   background:{
     image: url("../assets/header.png");
     size: cover;
@@ -8,7 +7,8 @@
     repeat:no-repeat;
     attachment: fixed;
     }
-  position:relative;   
+  position:relative;
+  padding-bottom:50px;   
   .logo {
     float: left;
     margin: 10px 0 0 30px;
@@ -20,7 +20,7 @@
   
   nav {
     float: right;
-    margin: 30px 30px 0px 0px;
+    padding: 30px 30px 0px 0px;
     a {
       display: inline-block;
       margin-left: 20px;
@@ -50,7 +50,6 @@
     position:relative;
     width:100%;
     top:15%;
-    margin-top:-60px;
     display:inline-block;
       h1 {
       font:{
@@ -80,7 +79,26 @@
     }
 
   }
+}
 
+@media screen and (max-width: 640px) {
+  .header {
+    @include display(flex);
+    @include justify-content(space-around);
+    @include flex-wrap(wrap);
 
+    .logo {
+      margin:40px;
+    }
+    nav {
+      margin:40px;
+      margin-top:-40px;
+      text-align:center;
+    }
+    
+    .intro {
+      top:0%;
+    }
 
+  }
 }

@@ -1,0 +1,51 @@
+.contact-lockup {
+  width:100%;
+  text-align: center;
+  background: $bgcolor;
+  
+  .social-icons {
+    margin : 0px auto 50px;
+    max-width:700px;
+    @include display(flex);
+    @include justify-content(space-around);
+    @include flex-wrap(wrap);
+
+    a{
+      display:block;
+      background:$accent;
+      @include size(80px);
+      border-radius:50%;
+      text-align:center;
+      line-height: 80px;
+      margin:20px;
+      @include transition();
+
+      &:hover {
+        @include transform(scale(1.2));
+      }
+      
+
+      i{
+        font-size: 50px;
+        color:white;
+      }
+    }
+  }
+
+  .bar {
+    width:250px;
+    height:0px;
+    border-top: 4px solid $accent;
+    margin: 0px auto 50px;
+  }
+
+  .bigEmail {
+    max-width:100%;
+    color: $accent;
+    font-size: 45px;
+    font-weight: 300;
+    padding-bottom:50px;
+    margin:0;
+  }
+
+}
