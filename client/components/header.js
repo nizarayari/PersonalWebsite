@@ -20,7 +20,9 @@ export default class Header extends Component {
     return (
       <div className='header'>
 
-        <img className='logo' src='../assets/logo2.png' />
+        <div className='logo'>
+          <i className="fa fa-code" aria-hidden="true"></i>
+        </div>
 
         <nav>
           <a href='#about-me'> About Me </a>
@@ -30,8 +32,8 @@ export default class Header extends Component {
         </nav>
 
         <div className='intro'>
-          <h1> <span> JavaScript Enthousiast </span> </h1>
-          <p className='subtitle'> Hello there! </p>
+          <h1> <span> Software Engineer </span> </h1>
+          <p className='subtitle'> Desktop | Web | Mobile </p>
         </div>
 
       </div>

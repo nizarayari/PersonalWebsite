@@ -12,10 +12,17 @@
   .logo {
     float: left;
     margin: 10px 0 0 30px;
-    border: white solid 1px;
-    border-radius: 100%;
-    opacity:0.8;
+    border: white solid 2px;
+    background: linear-gradient(to left, #1D976C , #93F9B9);
+    border-radius: 50%;
     @include size(100px);
+    i{
+      display:block;
+      color:white;
+      line-height: 100px;
+      text-align:center;
+      font-size:50px;
+    }
   }
   
   nav {
@@ -49,8 +56,8 @@
   .intro {
     position:relative;
     width:100%;
-    top:15%;
     display:inline-block;
+    padding:100px;
       h1 {
       font:{
         size:72px;
@@ -75,7 +82,14 @@
       color:white;
       letter-spacing: 0.3em;
       line-height: 1;
+    }
 
+    .location {
+      color:white;
+      font-size:20px;
+      i {
+        font-size: 20px;
+      }
     }
 
   }

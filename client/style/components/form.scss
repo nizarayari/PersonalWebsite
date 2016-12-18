@@ -4,6 +4,7 @@
 
 
 .form-container{
+      display:none;
       width: 480px;
       min-height: 450px;
       background-color: #ffffff;
@@ -12,6 +13,9 @@
       margin: 0 auto;
       text-align:center;
       margin-bottom: 70px;
+  &.active {
+    display:block;
+  }
 }
 
 
@@ -50,7 +54,7 @@
       &:valid {
         ~ label {
           color: #9d9d9d;
-          @include transform(translate(-12%, -50%) scale(0.75));
+          @include transform(translate(-12%, -55%) scale(0.75));
         }
       }
     }
@@ -121,3 +125,35 @@ button {
     font-size: 30px;
   }
 }
+
+.sent-mail {
+  display:none;
+
+  i{
+    font-size:200px;
+    color: #83d631;
+  }
+
+  p {
+    color:$accent;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  &.active{
+    display:block;
+  }
+}
+
+.loader {
+  &.active {
+    display: block;
+  }
+}
+
+@media screen and (max-width:490px) {
+  .form-container {
+    width: 350px;
+  }
+}
+

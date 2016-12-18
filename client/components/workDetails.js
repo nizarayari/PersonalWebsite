@@ -21,7 +21,7 @@ export default class Work extends Component {
                 <i className="ion-android-arrow-dropleft-circle"></i>
               </div> 
               <h4>{title}</h4>
-              <img src='../assets/header.png'/>
+              <img src={img}/>
               <p> {description} </p>
               <p> Tech Stack : {techStack} </p>
             </div>

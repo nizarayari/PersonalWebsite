@@ -23,21 +23,28 @@ export default class Work extends Component {
 
 
   renderWork(){
-    const projects = ['sharEat', 'Book Report', 'Say Partie', 'PickUp', 'Toiletz', 'Take me there']
+    
+    let projects = [];
 
-      return projects.map((project)=>{
-        return (
-          <div className="thumb-unit" onClick={()=>{this.workBelt(project)}}>
-            <div className="thumb-overlay">
-              <strong>{project}</strong>
-              <div className="zoom-icon">
-                <i className="ion-ios-search"></i>
-                <i className="ion-ios-plus-empty"></i>
-              </div>
+    for(let work in Projects ) {
+      projects.push(
+        <div 
+          className="thumb-unit" 
+          onClick={()=>{this.workBelt(work)}} 
+          style={{ backgroundImage: `url(${Projects[work].img})` }}>
+
+          <div className="thumb-overlay">
+            <strong>{work}</strong>
+            <div className="zoom-icon">
+              <i className="ion-ios-search"></i>
+              <i className="ion-ios-plus-empty"></i>
             </div>
           </div>
-        )
-      })
+        </div>
+      )
+    }
+
+    return projects;
   }
 
 
@@ -53,7 +60,6 @@ export default class Work extends Component {
             <div className="thumb-container">
               {this.renderWork()}
             </div>
-            <div className="loader">Loading...</div>
           </div>
 
           <WorkDetails projectInfo={this.state.currentWork}/>
