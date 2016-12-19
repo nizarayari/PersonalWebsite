@@ -8,7 +8,10 @@ export default class Form extends Component {
     this.state = {
       form: 'active',
       isLoading : '',
-      isSent : ''
+      isSent : '',
+      name:'',
+      email:'',
+      message:''
     }
 
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -17,16 +20,27 @@ export default class Form extends Component {
 
   handleSubmit(event){
     event.preventDefault()
+    const { name, email, message } = this.state
     this.setState({
       form: '',
       isLoading:'active',
       isSent : ''
     })
-    this.setState({
-      form: '',
-      isLoading:'',
-      isSent : 'active'
-    })
+
+    fetch.post('/api/email', { name, email, message })
+      .then((resp)=>{
+        this.setState({
+          form: '',
+          isLoading:'',
+          isSent : 'active'
+        })
+      })
+      .catch((err)=>{
+        console.log(err)
+      })
+
+    console.log(name, email, message)
+
   }
 
 
@@ -52,19 +66,23 @@ export default class Form extends Component {
 
 
             <div className="input-container">
-              <input type="text" required="required" autoComplete='off' />
+              <input type="text" required="required" autoComplete='off' value={this.state.name}
+                      onChange={(e)=>{this.setState({name:e.target.value})}} />
               <label >Name/Company</label>
               <div className='bar'></div>
             </div>
 
             <div className="input-container">
-              <input type="text" required="required" autoComplete='off' />
+              <input type="text" required="required" autoComplete='off' value={this.state.email} 
+                      onChange={(e)=>{this.setState({email:e.target.value})}}
+              />
               <label >Email</label>
               <div className='bar'></div>
             </div>
 
             <div className="input-container">
-              <textarea type="text" required="required" autoComplete='off' />
+              <textarea type="text" required="required" autoComplete='off' value={this.state.message} 
+                         onChange={(e)=>{this.setState({message:e.target.value})}}/>
               <label >Message:</label>
               <div className='bar'></div>
             </div>

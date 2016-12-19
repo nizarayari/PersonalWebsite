@@ -15,14 +15,14 @@ export default class Header extends Component {
     })
   }
 
+
   render(){
 
     return (
       <div className='header'>
 
-        <div className='logo'>
-          <i className="fa fa-code" aria-hidden="true"></i>
-        </div>
+
+        <div className='logo'></div>
 
         <nav>
           <a href='#about-me'> About Me </a>
@@ -40,3 +40,9 @@ export default class Header extends Component {
     )
   }
 }
+
+
+
+        // <div className='logo'>
+        //   <i className="fa fa-code" aria-hidden="true"></i>
+        // </div>

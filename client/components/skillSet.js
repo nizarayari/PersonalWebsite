@@ -18,7 +18,7 @@ export default class SkillSet extends Component {
 
     for(var skill in skills) {
       skillsViews.push(
-          <div className='skill-unit'>
+          <div key={skill} className='skill-unit'>
             <div className='skill-label'> {skill} </div>
             <div className={`skill-icons skill-${skills[skill]}`}>
               <span/> <span/> <span/> <span/> <span/>

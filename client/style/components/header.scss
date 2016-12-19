@@ -12,16 +12,14 @@
   .logo {
     float: left;
     margin: 10px 0 0 30px;
-    border: white solid 2px;
-    background: linear-gradient(to left, #1D976C , #93F9B9);
-    border-radius: 50%;
+    border: $accent solid 2px;
+    border-radius: 20%;
     @include size(100px);
-    i{
-      display:block;
-      color:white;
-      line-height: 100px;
-      text-align:center;
-      font-size:50px;
+    background:{
+    image: url("../assets/logo.jpg");
+    size: contain;
+    position: center;
+    repeat:no-repeat;
     }
   }
   

@@ -10,9 +10,7 @@ export default class Footer extends Component {
 
         <div className="lockup">
           
-        <div className='logo'>
-          <i className="fa fa-code" aria-hidden="true"></i>
-        </div>
+        <div className='logo'></div>
 
           <div className='content-wraper'> 
 

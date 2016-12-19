@@ -1,3 +1,8 @@
-client/compiled/bundle.js
+#Dependencies
 node_modules
-.env
+
+#logs
+npm-debug.log
+
+#Directories
+dist

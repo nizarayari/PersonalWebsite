@@ -11,21 +11,18 @@
       float: left;
       margin-right: 30px;
       margin-bottom: 20px;
-      border: white solid 2px;
-      background: linear-gradient(to left, #1D976C , #93F9B9);
-      border-radius: 50%;
-      i{
-        display:block;
-        color:white;
-        line-height: 50px;
-        text-align:center;
-        font-size:20px;
-      }
+      border: $accent solid 2px;
+      border-radius: 20%;
+      background:{
+        image: url("../assets/logo.jpg");
+        size: contain;
+        position: center;
+        repeat:no-repeat;
+        }
     }
   
     .content-wraper {
       float: left;
-      padding-top: 5px;
 
       .copyright {
         margin: 0;

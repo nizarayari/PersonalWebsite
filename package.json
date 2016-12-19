@@ -2,11 +2,13 @@
   "name": "mvp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./server/server.js",
   "scripts": {
-    "start": "npm run build",
-    "build": "webpack -d && cp client/index.html client/compiled/index.html && webpack-dev-server --content-base client/ --inline --hot",
-    "build:prod": "webpack -p && cp client/index.html client/compiled/index.html"
+    "start": "NODE_ENV=development node ./server/server.js",
+    "build": "webpack --verbose --colors --display-error-details --config webpack.config.prod.js",
+    "prod-node": "NODE_ENV=production node .",
+    "postinstall": "npm run build && npm run prod-node",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
@@ -19,13 +21,11 @@
     "bourbon": "^4.2.7",
     "express": "^4.14.0",
     "jquery": "^3.1.1",
-    "moment": "^2.14.1",
     "node-bourbon": "^4.2.8",
     "path": "^0.12.7",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-hot-loader": "^3.0.0-beta.6",
-    "react-link-state": "^0.1.2",
     "react-loader": "^2.4.0"
   },
   "devDependencies": {
@@ -35,7 +35,10 @@
     "node-sass": "^3.8.0",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.2"
   }
 }

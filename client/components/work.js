@@ -28,7 +28,8 @@ export default class Work extends Component {
 
     for(let work in Projects ) {
       projects.push(
-        <div 
+        <div
+          key={work} 
           className="thumb-unit" 
           onClick={()=>{this.workBelt(work)}} 
           style={{ backgroundImage: `url(${Projects[work].img})` }}>

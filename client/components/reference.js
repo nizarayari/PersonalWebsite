@@ -21,7 +21,7 @@ export default class Reference extends Component {
       const { name, title, content, img, linkedIn } = refList[ref]
       let isActive = this.state.currentRef === ref ? 'active-ref' : ''
       refViews.push(
-              <div className={`ref-unit ${isActive}`}>
+              <div key={ref} className={`ref-unit ${isActive}`}>
                 <div className='ref-face'>
                   <img src={img} alt='ref-face'/>
                   <strong className='ref-name'> {name} </strong>
@@ -80,7 +80,8 @@ export default class Reference extends Component {
       const { logo } = refList[ref]
       let isActive = this.state.currentRef === ref ? 'active-ref' : ''
       refLogoViews.push(
-        <img 
+        <img
+          key={ref} 
           onClick={()=>{this.handleRef(ref)}} 
           className={`ref-logo ${isActive}`} 
           src={ logo }
@@ -97,7 +98,7 @@ export default class Reference extends Component {
       const { name } = refList[ref]
       let isActive = this.state.currentRef === ref ? 'active-ref' : ''
       refMobile.push(
-        <span className={isActive} onClick={()=>{this.handleRef(ref)}}/> 
+        <span key={ref} className={isActive} onClick={()=>{this.handleRef(ref)}}/> 
       )
 
     }
