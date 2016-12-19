@@ -1,8 +1,10 @@
-const path = require('path')
+const path = require('path');
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const http = require('http');
+const dotenv = require('dotenv').config();;
+
 const router = require('./router');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
@@ -15,7 +17,6 @@ const compiler = webpack(webpackConfig);
 
 
 //Body Parser and Webpack Middleware
-//router(app);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -26,8 +27,9 @@ if(process.env.NODE_ENV != "production") {
   app.use(webpackHotMiddleware(compiler));
 }
 
-// static route
+//route
 app.use(express.static('./client'));
+router(app);
 
 //Index Route
 app.get('/', function(req, res) {

@@ -1,43 +1,39 @@
-
-
-
+const nodemailer = require('nodemailer');
 
 module.exports = function (app){
   
+  // on a POST request
+  app.post('/form', function(req, res, next){
+    console.log('Received POST at /form');
+    console.log(req.body)
 
-  app.post('')
+    const { name, email, message } = req.body
 
+    const smtpConfig = {
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true, // use SSL
+      auth: {
+          user: process.env.user,
+          pass: process.env.password
+      }
+    };
 
-  // on a GET request
-  app.get('*', function(req, res, next){
-    res.status(404).sendFile(__dirname + '/page404.html' )
+    // Set Up Nodemailer then send email
+    const mailOptions = {
+      from:'"My website" <' + process.env.user + '>',
+      to: 'nizarayari17@gmail.com',
+      subject: 'Info',
+      text: 'You have an email from ' + name + ' ' + email + ' saying: ' + message 
+    };
+
+    const transport = nodemailer.createTransport(smtpConfig);
+    transport.sendMail(mailOptions, function(err, info) {
+      if (err) console.log(err);
+      console.log('Message sent: ' + info.response);
+      res.json({ success: true, message: 'Email has been successfuly sent.'});
+    });
   })
-
-  //other request
-
 
 
 }
-
-
-// function sendMail(smtpTransport, mailOptions) {
-//   return new Promise((resolve, reject) => {
-//     return smtpTransport.sendMail(mailOptions, (err) => {
-//       return err ? reject(err) : resolve();
-//     });
-//   });
-// }
-
-// function sendResetEmail(smtpTransport, host, customer) {
-//   const RESET_PASSWORD_EMAIL_BODY = 'Someone recently requested a password ' +
-//     'change for your Book Report account. If this was you, you can set a ' +
-//     'new password here:\n' + `http://${host}/reset/${customer.resetToken}\n` +
-//     'If you don\'t want to change your password or didn\'t request this, ' +
-//     'just ignore and delete this message.'
-//   return sendMail(smtpTransport, {
-//     to: customer.email,
-//     from: 'no-reply@getbookreport.com',
-//     subject: 'Reset your password',
-//     text: RESET_PASSWORD_EMAIL_BODY
-//   });
-// }

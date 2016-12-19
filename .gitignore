@@ -6,3 +6,6 @@ npm-debug.log
 
 #Directories
 client/dist
+
+#Keys
+.env

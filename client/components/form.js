@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 
 export default class Form extends Component {
 
@@ -21,28 +21,16 @@ export default class Form extends Component {
   handleSubmit(event){
     event.preventDefault()
     const { name, email, message } = this.state
-    this.setState({
-      form: '',
-      isLoading:'active',
-      isSent : ''
-    })
+    this.setState({ form: '', isLoading:'active', isSent : '' })
 
-    fetch.post('/api/email', { name, email, message })
+    axios.post('/form',{ name, email, message })
       .then((resp)=>{
-        this.setState({
-          form: '',
-          isLoading:'',
-          isSent : 'active'
-        })
+        this.setState({ form: '', isLoading:'', isSent : 'active' })
       })
       .catch((err)=>{
         console.log(err)
       })
-
-    console.log(name, email, message)
-
   }
-
 
   render(){
 
