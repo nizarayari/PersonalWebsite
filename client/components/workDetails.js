@@ -10,7 +10,7 @@ export default class Work extends Component {
 
   render(){
 
-    const {title, description, img, techStack} = this.props.projectInfo;
+    const {title, description, role, challenges, link, img, techStack} = this.props.projectInfo;
 
     console.log(this.props.projectInfo)
 
@@ -21,9 +21,41 @@ export default class Work extends Component {
                 <i className="ion-android-arrow-dropleft-circle"></i>
               </div> 
               <h4>{title}</h4>
-              <img src={img}/>
-              <p> {description} </p>
-              <p> Tech Stack : {techStack} </p>
+              <div className='card-work'>
+                <img src={img}/>
+                <div className='work-description'>
+
+                  <div className='description-unit'>
+                    <div className='description-logo'><i className="ion-laptop"></i></div>
+                    <div className='description-text'> {description} </div>
+                  </div>
+
+                  <div className='description-unit'>
+                    <div className='description-logo'><i className="ion-ios-people"></i></div>
+                    <div className='description-text'> {role} </div>
+                  </div>
+
+                  <div className='description-unit'>
+                    <div className='description-logo'><i className="ion-ios-thunderstorm"></i></div>
+                    <div className='description-text'> {challenges} </div>
+                  </div>
+
+                  <div className='description-unit'>
+                    <div className='description-logo'><i className="ion-settings"></i></div>
+                    <div className='description-text'> {techStack} </div>
+                  </div>
+
+                  <div className='description-unit'>
+                    <div className='description-logo'><i className="fa fa-link" aria-hidden="true"></i></div>
+                    <a className='description-text' href={link} target="_blank"> {link} </a>
+                  </div>
+
+
+
+
+                </div>
+
+              </div>
             </div>
           </div>
     )

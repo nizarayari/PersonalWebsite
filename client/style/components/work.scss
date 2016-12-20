@@ -109,6 +109,51 @@
   margin:0 auto;
   position:relative;
   display:none;
+  
+  .card-work {
+    box-shadow: 2px 2px 5px 0 rgba(220, 220, 220, 0.5);
+    border:solid 1px #dcdcdc;
+    margin-bottom: 40px;
+    
+    .work-description {
+      background-color: #ffffff;
+      .description-unit {
+        padding:10px 40px;
+        @include display(flex);
+        @include align-items(center);
+        .description-logo{
+          max-width:50px;
+          i {
+            font-size: 50px;
+            line-height: 100px;
+            color:$accent;
+          }
+          .ion-ios-people{
+            font-size: 45px;
+          }
+          .ion-ios-thunderstorm{
+            font-size: 60px;
+          }
+          .ion-settings {
+            font-size: 40px;
+          }
+          .fa-link {
+            font-size: 30px;
+          }
+        }
+        .description-text{
+          padding:10px 0px 10px 20px;
+          line-height: 1.6;
+          font-size: 17px;
+          font-weight: 300;
+          text-align: left;
+        }
+      }
+    }
+
+  }
+
+
 
   .work-return{
     @include size(70px);
@@ -138,7 +183,6 @@
 
   img {
     width:100%;
-    margin-bottom:20px;
 
   }
 
