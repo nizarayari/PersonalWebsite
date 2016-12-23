@@ -6,11 +6,11 @@ export default class SkillSet extends Component {
     let skills = {
       Communication: 8,
       Organization: 8,
-      Learning: 8,
+      Learning: 9,
       Teaching: 6,
       Planning: 7,
-      'Visual Design': 5,
-      'UX Design': 6,
+      'Visual Design': 6,
+      'UX Design': 7,
       Programming: 8
     }
 

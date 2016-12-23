@@ -27,17 +27,12 @@ export default class Work extends Component {
 
                   <div className='description-unit'>
                     <div className='description-logo'><i className="ion-laptop"></i></div>
-                    <div className='description-text'> {description} </div>
+                    <div className='description-text' dangerouslySetInnerHTML={{__html:description}}></div>
                   </div>
 
                   <div className='description-unit'>
                     <div className='description-logo'><i className="ion-ios-people"></i></div>
                     <div className='description-text'> {role} </div>
-                  </div>
-
-                  <div className='description-unit'>
-                    <div className='description-logo'><i className="ion-ios-thunderstorm"></i></div>
-                    <div className='description-text'> {challenges} </div>
                   </div>
 
                   <div className='description-unit'>
@@ -50,9 +45,6 @@ export default class Work extends Component {
                     <a className='description-text' href={link} target="_blank"> {link} </a>
                   </div>
 
-
-
-
                 </div>
 
               </div>
@@ -62,3 +54,9 @@ export default class Work extends Component {
 
   }
 }
+
+
+                  // <div className='description-unit'>
+                  //   <div className='description-logo'><i className="ion-ios-thunderstorm"></i></div>
+                  //   <div className='description-text'> {challenges} </div>
+                  // </div>
