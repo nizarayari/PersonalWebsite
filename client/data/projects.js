@@ -45,7 +45,7 @@ export default {
     description:'Responsive personnal website that anyone can use for their own portfolio to showcase their work on a dekstop or on a mobile phone.',
     role:'I designed and built the responsive single page views and animations using custom Sass styling to enable any developer or designer to promote their work through an engaging and persuasive UI.',
     link:'http://nizarayari.com/',
-    img:'../assets/work_img/sp.png',
+    img:'../assets/work_img/mw.png',
     techStack:'React, Sass, Bourbon, Node.js'
   }
 

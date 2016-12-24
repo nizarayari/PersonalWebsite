@@ -19,30 +19,24 @@ export default class Header extends Component {
   render(){
 
     return (
-      <div className='header'>
+      <div className='header overlay'>
 
 
-        <div className='logo'></div>
+          <div className='logo'></div>
 
-        <nav>
-          <a href='#about-me'> About Me </a>
-          <a href='#me'> Work </a>
-          <a href='#ref'> References </a>
-          <a href='#contact'> Contact </a>
-        </nav>
+          <nav>
+            <a href='#about-me'> About Me </a>
+            <a href='#me'> Work </a>
+            <a href='#ref'> References </a>
+            <a href='#contact'> Contact </a>
+          </nav>
 
-        <div className='intro'>
-          <h1> <span> Software Engineer </span> </h1>
-          <p className='subtitle'> Desktop | Web | Mobile </p>
-        </div>
+          <div className='intro'>
+            <h1> <span> Software Engineer </span> </h1>
+            <p className='subtitle'> Desktop | Web | Mobile </p>
+          </div>
 
       </div>
     )
   }
 }
-
-
-
-        // <div className='logo'>
-        //   <i className="fa fa-code" aria-hidden="true"></i>
-        // </div>

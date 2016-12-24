@@ -18,7 +18,7 @@ export default class App extends React.Component {
 componentDidMount(){
   this.smoothScroll(1000);
 
-  $(".intro h1").fitText(1, { minFontSize: '30px', maxFontSize: '72px' });
+  $(".intro h1").fitText(1, { minFontSize: '40px', maxFontSize: '72px' });
   $(".bigEmail").fitText(1, { minFontSize: '10px', maxFontSize: '45px' });
 
 }
