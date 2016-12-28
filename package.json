@@ -1,17 +1,13 @@
 {
   "name": "Nizar",
   "version": "1.0.0",
-  "engines": {
-    "node": "v6.2.2"
-  },
-  "description": "Nizar Ayari Portfolio",
+  "description": "Nizar Portfolio",
   "main": "./server/server.js",
   "scripts": {
-    "start": "NODE_ENV=production node ./server/server.js",
+    "start": "NODE_ENV=development node ./server/server.js",
     "build": "webpack --verbose --colors --display-error-details --config webpack.config.prod.js",
     "prod-node": "NODE_ENV=production node .",
-    "postinstall": "NODE_ENV node ./server/server.js",
-    "dev":"NODE_ENV=development node ./server/server.js",
+    "postinstall": "npm run build && npm run prod-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -46,6 +42,6 @@
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2"  
   }
 }
