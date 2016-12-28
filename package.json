@@ -4,10 +4,8 @@
   "description": "NizarPortfolio",
   "main": "./server/server.js",
   "scripts": {
-    "start": "NODE_ENV=development node ./server/server.js",
+    "start": "node ./server/server.js",
     "build": "webpack --verbose --colors --display-error-details --config webpack.config.prod.js",
-    "prod-node": "NODE_ENV=production node .",
-    "postinstall": "npm run build && npm run prod-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
