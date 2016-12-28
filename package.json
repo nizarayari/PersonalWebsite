@@ -10,7 +10,7 @@
     "start": "NODE_ENV=production node ./server/server.js",
     "build": "webpack --verbose --colors --display-error-details --config webpack.config.prod.js",
     "prod-node": "NODE_ENV=production node .",
-    "postinstall": "npm run build && npm run prod-node",
+    "postinstall": "NODE_ENV=production node ./server/server.js",
     "dev":"NODE_ENV=development node ./server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
