@@ -31,7 +31,7 @@ export default class Reference extends Component {
 
                 <div className='ref-content'>
                   <i className="ion-quote begin"></i>
-                  <p>{content}</p>
+                  <p dangerouslySetInnerHTML={{__html:content}}></p>
                   <div className='end'>
                     <i className="ion-quote end"></i>
                   </div>

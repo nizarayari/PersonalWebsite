@@ -1,5 +1,13 @@
 
 export default {
+  'Say Partie': {
+    title : 'Say Partie',
+    description:'SayPartie is a responsive web application allowing users to create, organize and manage their parties and celebrations through personalized landing pages. Users can email and text invites, manage RSVPs, update guests via notifications, and more.',
+    role:'I built all the responsive views respecting the design board on Zeplin.com. I enabled user to create an account. I implemented Log In / Log Out functionality and forgot password flow.',
+    img:'../assets/work_img/sp.png',
+    link:'https://sp-mvp.herokuapp.com/',
+    techStack:'React, Redux, Relay, GraphQL, Radium, Node.js, MySQL, Heroku.'
+  },
   'sharEat': {
     title : 'sharEat',
     description:'<p><strong> Find ‘live’ gourmet dishes made by local Chefs </strong>. SharEat helps create an environment for aspiring chefs. These aspiring chef can join our app and host home-cooked meals for anyone interested in attending.</p>',
@@ -15,14 +23,6 @@ export default {
     img:'../assets/work_img/br.png',
     link:'http://ec2-54-161-213-215.compute-1.amazonaws.com:3000/',
     techStack:'React, Node.js, MongoDB, SendGrid, Google-charts, Bootstrap, AWS, Mocha, Chai, Enzyme, Selenium WebDriver.'
-  },
-  'Say Partie': {
-    title : 'Say Partie',
-    description:'SayPartie is a responsive web application allowing users to create, organize and manage their parties and celebrations through personalized landing pages. Users can email and text invites, manage RSVPs, update guests via notifications, and more.',
-    role:'I built all the responsive views respecting the design board on Zeplin.com. I enabled user to create an account. I implemented Log In / Log Out functionality and forgot password flow.',
-    img:'../assets/work_img/sp.png',
-    link:'https://sp-mvp.herokuapp.com/',
-    techStack:'React, Redux, Relay, GraphQL, Radium, Node.js, MySQL, Heroku.'
   },
   'PickUp': {
     title : 'PickUp',
