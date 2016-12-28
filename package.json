@@ -1,7 +1,7 @@
 {
   "name": "Nizar",
   "version": "1.0.0",
-  "description": "Nizar Portfolio",
+  "description": "NizarPortfolio",
   "main": "./server/server.js",
   "scripts": {
     "start": "NODE_ENV=development node ./server/server.js",
