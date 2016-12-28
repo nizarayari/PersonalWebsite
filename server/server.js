@@ -20,12 +20,12 @@ const compiler = webpack(webpackConfig);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-if(process.env.NODE_ENV != "production") {
-  app.use(webpackDevMiddleware(compiler, {
-    publicPath: '/dist/'
-  }));
-  app.use(webpackHotMiddleware(compiler));
-}
+// if(process.env.NODE_ENV != "production") {
+//   app.use(webpackDevMiddleware(compiler, {
+//     publicPath: '/dist/'
+//   }));
+//   app.use(webpackHotMiddleware(compiler));
+// }
 
 //route
 app.use(express.static('./client'));
@@ -33,7 +33,7 @@ router(app);
 
 //Index Route
 app.get('/', function(req, res) {
-   res.sendFile(path.join(__dirname, '../index.html'))
+   res.sendFile(path.resolve(__dirname, '../client', 'index.html'))
 });
 
 app.get('*', function(req, res) {
