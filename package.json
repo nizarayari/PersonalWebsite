@@ -4,8 +4,10 @@
   "description": "NizarPortfolio",
   "main": "./server/server.js",
   "scripts": {
-    "start": "node ./server/server.js",
+    "start": "NODE_ENV=development node ./server/server.js",
     "build": "webpack --verbose --colors --display-error-details --config webpack.config.prod.js",
+    "prod-node": "NODE_ENV=production node .",
+    "postinstall": "npm run build && npm run prod-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,7 +18,6 @@
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
-    "babel-preset-stage-2": "^6.17.0",
     "body-parser": "^1.15.2",
     "bourbon": "^4.2.7",
     "dotenv": "^2.0.0",
@@ -28,18 +29,19 @@
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-hot-loader": "^3.0.0-beta.6",
-    "react-loader": "^2.4.0",
-    "webpack": "^1.13.1",
-    "webpack-hot-middleware": "^2.13.2",
-    "webpack-dev-middleware": "^1.9.0",
+    "react-loader": "^2.4.0"
+  },
+  "devDependencies": {
+    "babel-preset-stage-2": "^6.17.0",
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
     "node-sass": "^3.8.0",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-  },
-  "devDependencies": {
-    "webpack-dev-server": "^1.16.2"  
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.2"
   }
 }
