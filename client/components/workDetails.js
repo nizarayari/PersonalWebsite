@@ -12,8 +12,6 @@ export default class Work extends Component {
 
     const {title, description, role, challenges, link, img, techStack} = this.props.projectInfo;
 
-    console.log(this.props.projectInfo)
-
     return (
           <div className='work-wrap'>
             <div className="work-container" onClick={()=>{this.closeWorkBelt()}}>
