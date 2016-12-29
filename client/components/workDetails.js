@@ -52,9 +52,3 @@ export default class Work extends Component {
 
   }
 }
-
-
-                  // <div className='description-unit'>
-                  //   <div className='description-logo'><i className="ion-ios-thunderstorm"></i></div>
-                  //   <div className='description-text'> {challenges} </div>
-                  // </div>
