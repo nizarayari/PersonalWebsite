@@ -3,7 +3,7 @@ export default {
   'Beto': {
     name : 'Beto Juárez III',
     title: 'Product Manager, Gigster',
-    content:'<strong>I worked directly with Nizar</strong>. His dedication is relentless even when deadlines were challenging and very tight. He continued to deliver very good work on time and always wants to go above and beyond what was requested of him.  This, coupled with his extreme attention to detail in technical issues makes him one of the few strong members at Gigster. I would definitely recommend Nizar to organizations seeking someone who is ready to come onboard and immediately begin contributing to the greater good.',
+    content:'<strong>I worked with Nizar directly on the Say Partie project</strong>. He has a consistent dedication even in the face of  challenging deadlines. Throughout the project he continued to deliver good work and always wants to go above and beyond what was requested of him.  His problem solving skills made him a strong member of the Gigster development community. I was encouraged to see how fast Nizar picked up new concepts. I would recommend Nizar to organizations seeking someone who is ready to come onboard and immediately begin contributing to their development efforts.',
     img:'../assets/ref_face/beto.jpg',
     linkedIn:'https://www.linkedin.com/in/betojuareziii',
     logo:"../assets/ref_logo/gigster.svg"
