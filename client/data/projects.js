@@ -21,7 +21,7 @@ export default {
     description:'Book Report is a SaaS platform for Kindle Direct Publishing users that scrapes self-published author’s sales data and builds a useful reporting interface.',
     role:'I reconfigured the web scraper by moving data scraping logic to server-side, creating a MongoDB database and parsing data from a spreadsheet using node-xlsx, resulting in doubled data processing efficiency. I refactored current code base by adding more modularity and separation of concerns for better readability and maintainability. I enabled user authentication to store user information and check subscription as well as payment status, thus enhancing user experience. Finally I optimized code base sustainability by implementing unit-testing and end-to-end testing.',
     img:'../assets/work_img/br.png',
-    link:'http://ec2-54-161-213-215.compute-1.amazonaws.com:3000/',
+    link:'https://www.getbookreport.com/',
     techStack:'React, Node.js, MongoDB, SendGrid, Google-charts, Bootstrap, AWS, Mocha, Chai, Enzyme, Selenium WebDriver.'
   },
   'PickUp': {
