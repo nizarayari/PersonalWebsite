@@ -10,7 +10,8 @@ module.exports = function (app){
 
     const { name, email, message } = req.body
 
-    const smtpConfig = {
+    const pluginConfig = {
+      transporter: 'ses',
       accessKeyId: process.env.accessKeyId,
       secretAccessKey: process.env.secretAccessKey
     };
@@ -23,10 +24,10 @@ module.exports = function (app){
       text: 'You have an email from ' + name + ' ' + email + ' saying: ' + message 
     };
 
-    const transport = nodemailer.createTransport(ses(smtpConfig));
+    const transport = nodemailer.createTransport(pluginConfig);
     transport.sendMail(mailOptions, function(err, info) {
       if (err) console.log(err);
-      console.log('Message sent: ');
+      console.log('Message sent: ' + info);
       res.json({ success: true, message: 'Email has been successfuly sent.'});
     });
   })
