@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const ses = require('nodemailer-ses-transport');
 
 module.exports = function (app){
   
@@ -10,13 +11,9 @@ module.exports = function (app){
     const { name, email, message } = req.body
 
     const smtpConfig = {
-      host: 'smtp.gmail.com',
-      port: 465,
-      secure: true, // use SSL
-      auth: {
-          user: process.env.user,
-          pass: process.env.password
-      }
+      transporter : 'ses',
+      accessKeyId: process.env.accessKeyId,
+      secretAccessKey: process.env.secretAccessKey
     };
 
     // Set Up Nodemailer then send email
