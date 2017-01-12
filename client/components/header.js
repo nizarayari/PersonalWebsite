@@ -22,7 +22,7 @@ export default class Header extends Component {
       <div className='header overlay'>
 
 
-          <div className='logo'></div>
+          <img src="../assets/logo.svg" className='logo'/>
 
           <nav>
             <a href='#about-me'> About Me </a>
