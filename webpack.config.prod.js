@@ -13,7 +13,7 @@ module.exports = {
     loaders: [
       { test: /.js?$/, loader: 'babel-loader', exclude: /node_modules/, query: { presets: ['es2015', 'react','stage-2'], plugins:['react-hot-loader/babel'] } },
       { test: /\.scss$/, loaders:["style", "css", "sass?includePaths[]=" + bourbon] },
-      { test: /\.(png|jpg)$/, loader: 'url-loader' }
+      { test: /\.(png|jpg|svg)$/, loader: 'url-loader' }
     ]
   },
   resolve: {
