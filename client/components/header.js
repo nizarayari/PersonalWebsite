@@ -32,7 +32,7 @@ export default class Header extends Component {
           </nav>
 
           <div className='intro'>
-            <h1> <span> Software Engineer </span> </h1>
+            <h1> <span> Software Crafter </span> </h1>
             <p className='subtitle'> Desktop | Web | Mobile </p>
           </div>
 
