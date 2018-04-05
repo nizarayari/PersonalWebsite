@@ -1,49 +1,170 @@
 .about {
   text-align:center;
+
+  .about__header {
+    position: relative;
+    background-color: #c9e7f4;
+
+    .about__header__title {
+      padding-bottom: 250px;
+    }
+  }
+}
+
+.container-dot {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: -7vw;
+  z-index: 1;
 }
 
 .face-lockup{
-  max-width:780px;
-  @include display(flex);
-  margin: 0 auto;
-  @include align-items(center);
-  @include justify-content(space-between);
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  width: 100%;
+  height: 240px;
+  bottom: -7vw;
+  overflow: hidden;
+
+  .img {
+    border-radius: 50%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    animation-name: floating;
+    -webkit-animation-name: floating;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    /* Safari 4.0 - 8.0 */
+    animation-timing-function: linear;
+    -webkit-transform-origin: 50% 1px;
+    -moz-transform-origin: 50% 1px;
+    -ms-transform-origin: 50% 1px;
+    -o-transform-origin: 50% 1px;
+    transform-origin: 50% 1px;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+
 
   .face-img {
     @include size(200px);
-    background: url("../assets/face.jpg") center center;
+    background: url("../assets/about_pic/face.jpg") center center;
     background-size: cover;
-    opacity:0.8;
+    left: calc(50% - 100px);
+    top: 10px;
+    animation-duration: 6s;
+    -webkit-animation-duration: 6s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
     border-radius: 50%;
-    @include order(3);
   }
 
-  [class^='icon-'] {
+  .mozilla-img {
+    @include size(150px);
+    background: url("../assets/about_pic/mozilla.jpg") center center;
+    background-size: cover; 
+    top: 10px;
+    left: 40px;
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+    border-radius: 50%;
+  }
+
+  .qonto1-img {
+    @include size(90px);
+    background: url("../assets/about_pic/qonto1.jpg") center center;
+    background-size: cover;
+    left: 300px;
+    top: 90px;
+    animation-duration: 12s;
+    -webkit-animation-duration: 12s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    border-radius: 50%;
+  }
+
+  .qonto2-img {
     @include size(100px);
-    border-radius:50%;
-    background: $bgcolor;
-    
-    &.icon-pencil {
-      @include order(1);
-    }
-    &.icon-mouse {
-      @include order(4);
-    }
-    &.icon-browser {
-      @include order(2);
-    }
-    &.icon-video {
-      @include order(5);
-    }
-
-
-    i{
-      font-size: 50px;
-      line-height: 100px;
-      color: $accent;
-    }
+    background: url("../assets/about_pic/qonto2.jpg") center center;
+    background-size: cover;
+    right: 280px;
+    top: 120px;
+    animation-duration: 11s;
+    -webkit-animation-duration: 11s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+    border-radius: 50%;
   }
 
+  .venteprive-img {
+    @include size(130px);
+    background: url("../assets/about_pic/venteprive.jpg") center center;
+    background-size: cover;
+    right: 40px;
+    top: 80px;
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    -webkit-transition-delay: 0.7s;
+    transition-delay: 0.7s;
+    border-radius: 50%;
+  }
+}
+
+.face-lockup .face-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.wave-start {
+    position: absolute;
+    width: 100%;
+    top: calc(100% - 1px);
+    left: 0px;
+    overflow: hidden;
+    height: 10vw;
+}
+
+.wave-start img {
+  position: absolute;
+  left: -4px;
+  width: calc(100% + 8px);
+  top: 0px;
+}
+
+.wave-start .wave-1 {
+  opacity: 0.3;
+}
+
+.wave-start .wave-2 {
+  opacity: 0.3;
+}
+
+.wave-start .wave-3 {
+  opacity: 0.3;
+}
+
+.wave-start .wave-4 {
+  opacity: 0.3;
+}
+
+.wave-start .wave-5 {
+  opacity: 0.3;
+}
+
+.wave-start .wave-6 {
+  opacity: 1;
 }
 
 h3 {
@@ -58,6 +179,7 @@ h3 {
   padding: 0 15px;
   max-width: 620px;
   margin: 50px auto;
+  margin-top: 150px;
   font-size: 24px;
   font-weight: 300;
   a {
@@ -154,6 +276,19 @@ h3 {
   background:$bgcolor;
 }
 
-
-
-
+@keyframes floating {
+  from {
+      -webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+      -moz-transform: rotate(0deg) translate(-10px) rotate(0deg);
+      -ms-transform: rotate(0deg) translate(-10px) rotate(0deg);
+      -o-transform: rotate(0deg) translate(-10px) rotate(0deg);
+      transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+      -moz-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+      -ms-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+      -o-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+      transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}

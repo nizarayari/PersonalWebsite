@@ -1,0 +1,12 @@
+<svg class="wave-3" version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1350 76" xml:space="preserve">
+
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+
+        <stop offset="0%" style="stop-color:rgba(31, 159, 215, 0.3);stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:rgba(31, 159, 215, 0.3);stop-opacity:1"/>
+
+    </linearGradient>
+
+    <path id="line3" fill="url(#grad1)" d="M954,76c149,0,396-75.8,396-75.8H0C0,0.2,637,76,954,76z"/>
+
+</svg>

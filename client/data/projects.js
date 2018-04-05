@@ -5,7 +5,7 @@ export default {
     description:'<p><strong> Find ‘live’ gourmet dishes made by local Chefs </strong>. SharEat helps create an environment for aspiring chefs. These aspiring chef can join our app and host home-cooked meals for anyone interested in attending.</p>',
     role:' I architected back-end server structure using efficient and asynchronous RESTful APIs, modeled, developed and organized a hosted mySQL database through phpMyAdmin. I utilized AWS S3 to store users’ files, thus reducing workload on the database server by over 20%. I strengthened the user interaction capabilities by designing and implementing a chat feature. Finally, I enabled continuous application deployment by launching an instance of AWS EC2.',
     img:'../assets/work_img/share-eat.png',
-    link:'http://www.shareat-us.com/',
+    link:'https://github.com/npm-j/shareat',
     techStack:'React, Redux, Sass, Node.js, Socket.io, MySQL, AWS.'
   },
   'Book Report': {
@@ -21,14 +21,14 @@ export default {
     description:'Host or join a sport game in your area using PickUps.',
     role:'I built a stateless backend with RESTful APIs, consumed by multiple React components through action creators. I devised an algorithm that limits search radius, resulting in improved database efficiency. Fianlly I condensed the codebase, simplified database interaction and optimized table schema by refactoring raw SQL queries with Sequelize.',
     img:'../assets/work_img/pickup.png',
-    link:'http://ec2-54-161-213-215.compute-1.amazonaws.com:3000/',
+    link:'https://github.com/toiletz/pickup',
     techStack:'React, Redux, Node.js, Material-UI, MySQL, Google-map.'
   },
   'Toiletz': {
     title : 'Toiletz',
     description:'App designed to allow users to quickly locate clean toilets around their current location.',
     role:' I constructed 90% of front-end view and features using React, formulated data flow architecture with Redux and structured the application views using React-router. I utilized Google Map API to display data with customized icons and information box, enhancing data visualization. I implemented authentication system using JWT strategies, allowing signed-in users’ access to protected features, such as adding and reviewing toilets.',
-    link:'http://ec2-54-204-215-124.compute-1.amazonaws.com:3000/',
+    link:'https://github.com/toiletz/toiletz',
     img:'../assets/work_img/toiletz.png',
     techStack:'React, Redux, Node.js, Google-map, JWT, MySQL.'
   },
@@ -39,16 +39,13 @@ export default {
     link:'http://nizarayari.com/',
     img:'../assets/work_img/mw.png',
     techStack:'React, Sass, Bourbon, Node.js'
+  },
+    'Say Partie': {
+    title : 'Say Partie',
+    description:'SayPartie is a responsive web application allowing users to create, organize and manage their parties and celebrations through personalized landing pages. Users can email and text invites, manage RSVPs, update guests via notifications, and more.',
+    role:'I built all the responsive views respecting the design board on Zeplin.com. I enabled user to create an account. I implemented Log In / Log Out functionality and forgot password flow.',
+    img:'../assets/work_img/sp.png',
+    link:'https://saypartie.com/',
+    techStack:'React, Redux, Relay, GraphQL, Radium, Node.js, MySQL, Heroku.'
   }
-
 }
-
-
-  // 'Say Partie': {
-  //   title : 'Say Partie',
-  //   description:'SayPartie is a responsive web application allowing users to create, organize and manage their parties and celebrations through personalized landing pages. Users can email and text invites, manage RSVPs, update guests via notifications, and more.',
-  //   role:'I built all the responsive views respecting the design board on Zeplin.com. I enabled user to create an account. I implemented Log In / Log Out functionality and forgot password flow.',
-  //   img:'../assets/work_img/sp.png',
-  //   link:'https://sp-mvp.herokuapp.com/',
-  //   techStack:'React, Redux, Relay, GraphQL, Radium, Node.js, MySQL, Heroku.'
-  // },

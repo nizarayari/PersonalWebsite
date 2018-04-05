@@ -1,0 +1,11 @@
+<svg class="wave-6" version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1350 103" xml:space="preserve">
+
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+
+        <stop offset="0%" style="stop-color:#c9e7f4;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#c9e7f4;stop-opacity:1"/>
+
+    </linearGradient>
+
+    <path id="line6" fill="url(#grad1)" d="M688,103c169,0,662-102.9,662-102.9H0C0,0.1,520,103,688,103z"/>
+</svg>
